@@ -11,6 +11,7 @@
 		4408264E28AB7B4F0067BA33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408264D28AB7B4F0067BA33 /* ContentView.swift */; };
 		4408265028AB7B520067BA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4408264F28AB7B520067BA33 /* Assets.xcassets */; };
 		4408265328AB7B520067BA33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4408265228AB7B520067BA33 /* Preview Assets.xcassets */; };
+		4408265A28AB8BB60067BA33 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408265928AB8BB60067BA33 /* LaunchScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4408264D28AB7B4F0067BA33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4408264F28AB7B520067BA33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4408265228AB7B520067BA33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4408265928AB8BB60067BA33 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				4408264B28AB7B4F0067BA33 /* TodoListApp.swift */,
+				4408265928AB8BB60067BA33 /* LaunchScreenView.swift */,
 				4408264D28AB7B4F0067BA33 /* ContentView.swift */,
 				4408264F28AB7B520067BA33 /* Assets.xcassets */,
 				4408265128AB7B520067BA33 /* Preview Content */,
@@ -139,6 +142,7 @@
 			files = (
 				4408264E28AB7B4F0067BA33 /* ContentView.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
+				4408265A28AB8BB60067BA33 /* LaunchScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
