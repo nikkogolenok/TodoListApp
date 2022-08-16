@@ -28,7 +28,8 @@ struct OnboardingView: View {
                         imageNameBottom: "groupThree",
                         bottonName: "Get Started")
         }
-        .tabViewStyle(.page(indexDisplayMode: .always))
+        .tabViewStyle(PageTabViewStyle())
+        .ignoresSafeArea(.container, edges: .all)
     }
 }
 
@@ -50,32 +51,33 @@ struct OnboardView: View {
         VStack {
             Image(imageName)
                 .frame(width: 305, height: 252)
-                .padding(40)
+                .padding(.init(top: 108, leading: 35, bottom: 50, trailing: 35))
             
             Text(title)
-                .frame(width: 206, height: 28)
-                .foregroundColor(Color(red: 0.192, green: 0.192, blue: 0.192, opacity: 1))
+                .font(.custom(FontsStyleManager.Roboto.thin, size: 24))
+                .padding(.init(top: 0, leading: 0, bottom: 11, trailing: 0))
             
             Text(description)
-                .frame(width: 277, height: 21)
-                .foregroundColor(Color(red: 0.192, green: 0.192, blue: 0.192, opacity: 1))
+                .font(.custom(FontsStyleManager.Roboto.thin, size: 19))
+                .opacity(0.8)
             
             ZStack {
                 Image(imageNameBottom)
                     .resizable()
-                    .scaledToFit()
+                    .ignoresSafeArea()
+                    .frame(width: 438, height: 322)
                 
                 Button(bottonName) {
                     print("1")
                 }
-                .font(.system(size: 18, design: .default))
-                .foregroundColor(Color.black)
+                .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                 .frame(width: 293, height: 48)
-                .background(Color(red: 255, green: 255, blue: 255, opacity: 1))
+                .background(Color.white)
+                .foregroundColor(.black)
                 .cornerRadius(5)
+                .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, x: 0, y: 4)
+                .padding(.init(top: 31, leading: 0, bottom: 0, trailing: 0 ))
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-            .edgesIgnoringSafeArea(.bottom)
         }
     }
 }

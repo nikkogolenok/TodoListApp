@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408264B28AB7B4F0067BA33 /* TodoListApp.swift */; };
-		4408264E28AB7B4F0067BA33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408264D28AB7B4F0067BA33 /* ContentView.swift */; };
 		4408265028AB7B520067BA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4408264F28AB7B520067BA33 /* Assets.xcassets */; };
 		4408265328AB7B520067BA33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4408265228AB7B520067BA33 /* Preview Assets.xcassets */; };
 		4408265A28AB8BB60067BA33 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408265928AB8BB60067BA33 /* LaunchScreenView.swift */; };
 		4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408265B28AB95400067BA33 /* OnboardingView.swift */; };
+		4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408266428ABDB730067BA33 /* FontsStyleManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4408264828AB7B4F0067BA33 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4408264B28AB7B4F0067BA33 /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
-		4408264D28AB7B4F0067BA33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4408264F28AB7B520067BA33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4408265228AB7B520067BA33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4408265928AB8BB60067BA33 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		4408265B28AB95400067BA33 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		4408266228ABDB580067BA33 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		4408266328ABDB590067BA33 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		4408266428ABDB730067BA33 /* FontsStyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsStyleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +57,10 @@
 		4408264A28AB7B4F0067BA33 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				4408266128ABD9E70067BA33 /* Fonts */,
 				4408264B28AB7B4F0067BA33 /* TodoListApp.swift */,
 				4408265928AB8BB60067BA33 /* LaunchScreenView.swift */,
 				4408265B28AB95400067BA33 /* OnboardingView.swift */,
-				4408264D28AB7B4F0067BA33 /* ContentView.swift */,
 				4408264F28AB7B520067BA33 /* Assets.xcassets */,
 				4408265128AB7B520067BA33 /* Preview Content */,
 			);
@@ -71,6 +73,16 @@
 				4408265228AB7B520067BA33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4408266128ABD9E70067BA33 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4408266228ABDB580067BA33 /* Roboto-Medium.ttf */,
+				4408266328ABDB590067BA33 /* Roboto-ThinItalic.ttf */,
+				4408266428ABDB730067BA33 /* FontsStyleManager.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4408264E28AB7B4F0067BA33 /* ContentView.swift in Sources */,
+				4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */,
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
 				4408265A28AB8BB60067BA33 /* LaunchScreenView.swift in Sources */,
