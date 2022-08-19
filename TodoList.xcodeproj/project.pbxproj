@@ -13,6 +13,7 @@
 		4408265A28AB8BB60067BA33 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408265928AB8BB60067BA33 /* LaunchScreenView.swift */; };
 		4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408265B28AB95400067BA33 /* OnboardingView.swift */; };
 		4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408266428ABDB730067BA33 /* FontsStyleManager.swift */; };
+		4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408268028AFC8590067BA33 /* SuccesfulView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		4408266228ABDB580067BA33 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		4408266328ABDB590067BA33 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		4408266428ABDB730067BA33 /* FontsStyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsStyleManager.swift; sourceTree = "<group>"; };
+		4408268028AFC8590067BA33 /* SuccesfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesfulView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				4408264B28AB7B4F0067BA33 /* TodoListApp.swift */,
 				4408265928AB8BB60067BA33 /* LaunchScreenView.swift */,
 				4408265B28AB95400067BA33 /* OnboardingView.swift */,
+				4408268028AFC8590067BA33 /* SuccesfulView.swift */,
 				4408264F28AB7B520067BA33 /* Assets.xcassets */,
 				4408265128AB7B520067BA33 /* Preview Content */,
 			);
@@ -159,6 +162,7 @@
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
 				4408265A28AB8BB60067BA33 /* LaunchScreenView.swift in Sources */,
+				4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
