@@ -57,23 +57,33 @@ struct SignInView: View {
             .padding(.top, 25)
             .padding(.trailing, 20)
             
-            VStack(alignment: .center, spacing: 51) {
+            Button("Forgot password") {
+                print("Forgot password")
+            }
+            .frame(width: 136, height: 21)
+            .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
+            .foregroundColor(.gray)
+            .padding(.top, 12)
+            .padding(.leading, 190)
+            
+            VStack(alignment: .center, spacing: 118) {
                 Button("Sign Up") {
                     print("SignUp")
                 }
                 .frame(width: 327, height: 48)
-                .background(FontsStyleManager.Roboto.colorButtonRed)
+                .background(FontsStyleManager.Roboto.colorRed)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                 .foregroundColor(FontsStyleManager.Roboto.colorThin)
                 
                 Button("Sign In") {
                     print("SignIn")
                 }
-                .frame(width: 55, height: 21)
+                .frame(width: 60, height: 21)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                 .foregroundColor(FontsStyleManager.Roboto.colorThin)
             }
-            .padding(.leading, 30)
+            .padding(.top, 72)
+            //.padding(.leading, 30)
         }
     }
 }
