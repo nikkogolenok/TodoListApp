@@ -14,6 +14,10 @@
 		4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408265B28AB95400067BA33 /* OnboardingView.swift */; };
 		4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408266428ABDB730067BA33 /* FontsStyleManager.swift */; };
 		4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408268028AFC8590067BA33 /* SuccesfulView.swift */; };
+		447B467528AFF5E2005C7291 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467428AFF5E2005C7291 /* SignInView.swift */; };
+		447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467628B0FC64005C7291 /* ForgotPasswordView.swift */; };
+		447B467928B10635005C7291 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467828B10635005C7291 /* SignUpView.swift */; };
+		447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467A28B106DE005C7291 /* ResetPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		4408266328ABDB590067BA33 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		4408266428ABDB730067BA33 /* FontsStyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsStyleManager.swift; sourceTree = "<group>"; };
 		4408268028AFC8590067BA33 /* SuccesfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesfulView.swift; sourceTree = "<group>"; };
+		447B467428AFF5E2005C7291 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		447B467628B0FC64005C7291 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		447B467828B10635005C7291 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		447B467A28B106DE005C7291 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				4408264B28AB7B4F0067BA33 /* TodoListApp.swift */,
 				4408265928AB8BB60067BA33 /* LaunchScreenView.swift */,
 				4408265B28AB95400067BA33 /* OnboardingView.swift */,
+				447B467828B10635005C7291 /* SignUpView.swift */,
+				447B467428AFF5E2005C7291 /* SignInView.swift */,
+				447B467628B0FC64005C7291 /* ForgotPasswordView.swift */,
+				447B467A28B106DE005C7291 /* ResetPasswordView.swift */,
 				4408268028AFC8590067BA33 /* SuccesfulView.swift */,
 				4408264F28AB7B520067BA33 /* Assets.xcassets */,
 				4408265128AB7B520067BA33 /* Preview Content */,
@@ -159,9 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */,
+				447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */,
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,
+				447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
+				447B467928B10635005C7291 /* SignUpView.swift in Sources */,
 				4408265A28AB8BB60067BA33 /* LaunchScreenView.swift in Sources */,
+				447B467528AFF5E2005C7291 /* SignInView.swift in Sources */,
 				4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

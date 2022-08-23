@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
+    @State private var currentIndex = 0
+    
     var body: some View {
         TabView {
             OnboardView(imageName: "onbordingImageFirst",
@@ -55,10 +58,12 @@ struct OnboardView: View {
             
             Text(title)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 24))
+                .foregroundColor(FontsStyleManager.Roboto.colorThin)
                 .padding(.init(top: 0, leading: 0, bottom: 11, trailing: 0))
             
             Text(description)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 19))
+                .foregroundColor(FontsStyleManager.Roboto.colorMedium)
                 .opacity(0.8)
             
             ZStack {

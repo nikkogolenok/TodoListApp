@@ -16,11 +16,13 @@ struct SuccesfulView: View {
             
             Text("Succesful!")
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
+                .foregroundColor(FontsStyleManager.Roboto.colorThin)
                 .padding(.init(top: 0, leading: 113, bottom: 10, trailing: 113))
             
             Text("You have succesfully change password. Please use your new passwords when logging in.")
                 .frame(width: 330, height: 57)
                 .font(.custom(FontsStyleManager.Roboto.medium, size: 16))
+                .foregroundColor(FontsStyleManager.Roboto.colorThin)
                 .multilineTextAlignment(.center)
                 .padding(.init(top: 0, leading: 23, bottom: 0, trailing: 22))
         }
