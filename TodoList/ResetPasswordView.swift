@@ -8,8 +8,59 @@
 import SwiftUI
 
 struct ResetPasswordView: View {
+    
+    @State private var emailTextField = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(alignment: .leading, spacing: 50) {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Reset Password")
+                    .frame(width: 236, height: 41)
+                    .font(.custom(FontsStyleManager.Roboto.thin, size: 30))
+                    .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                Text("Reset code was sent to your email. Please enter the code and create new password")
+                    .frame(width: 340, height: 38)
+                    .font(.custom(FontsStyleManager.Roboto.medium, size: 16))
+                    .foregroundColor(FontsStyleManager.Roboto.colorMedium)
+                    .multilineTextAlignment(.leading)
+            }
+            
+            VStack(alignment: .leading, spacing: 17) {
+                Text("Reset code")
+                TextField("Enter your number", text: $emailTextField)
+                Rectangle()
+                    .frame(width: 326, height: 3)
+                    .foregroundColor(.gray)
+            }
+            
+            VStack(alignment: .leading, spacing: 17) {
+                Text("New password")
+                TextField("Enter your password", text: $emailTextField)
+                Rectangle()
+                    .frame(width: 326, height: 3)
+                    .foregroundColor(.gray)
+            }
+            
+            VStack(alignment: .leading, spacing: 17) {
+                Text("Confirm password")
+                TextField("Enter your confirm password", text: $emailTextField)
+                Rectangle()
+                    .frame(width: 326, height: 3)
+                    .foregroundColor(.gray)
+            }
+            
+            Button("Change password") {
+                print("Change password")
+            }
+            .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
+            .frame(width: 327, height: 48)
+            .background(Color(red: 0.976, green: 0.376, blue: 0.376, opacity: 1))
+            .foregroundColor(Color(red: 1, green: 1, blue: 1, opacity: 1))
+            .cornerRadius(5)
+        }
+        .padding(.top, 0)
+        .padding(.leading, 24)
     }
 }
 
