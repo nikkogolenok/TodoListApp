@@ -11,10 +11,9 @@ struct SignUpView: View {
     
     @State private var emailTextField = ""
     @State private var passwordTextField = ""
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        NavigationView {
             VStack(alignment: .leading) {
                 
                 VStack(alignment: .leading) {
@@ -22,8 +21,6 @@ struct SignUpView: View {
                         .frame(width: 127, height: 41, alignment: .leading)
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
                         .foregroundColor(FontsStyleManager.Roboto.colorThin)
-                    
-                    
                     Text("Sign up to continue")
                         .frame(width: 138, height: 19, alignment: .leading)
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 16))
@@ -90,14 +87,15 @@ struct SignUpView: View {
                 .padding(.top, 72)
                 .padding(.leading, 30)
             }
-            .offset(y: -60)
-        }
-        .navigationBarItems(leading: Button(action: {
-            self.presentationMode.wrappedValue.dismiss()
-        }) {
-            Image("buttonBack")
-        })
-        
+            //.offset(y: -100)
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    CustomBackButton {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
+            }
     }
 }
 

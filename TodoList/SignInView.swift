@@ -11,6 +11,7 @@ struct SignInView: View {
     
     @State private var emailTextField = ""
     @State private var passwordTextField = ""
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
             
@@ -86,7 +87,14 @@ struct SignInView: View {
                 .padding(.top, 72)
                 //.padding(.leading, 30)
             }
-        
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    CustomBackButton {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
+            }
     }
 }
 

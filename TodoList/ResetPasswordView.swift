@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ResetPasswordView: View {
     
+    @Environment (\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var emailTextField = ""
     
     var body: some View {
@@ -50,8 +51,8 @@ struct ResetPasswordView: View {
                     .foregroundColor(.gray)
             }
             
-            Button("Change password") {
-                print("Change password")
+            NavigationLink("Change password") {
+                SuccesfulView()
             }
             .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
             .frame(width: 327, height: 48)
@@ -61,6 +62,15 @@ struct ResetPasswordView: View {
         }
         .padding(.top, 0)
         .padding(.leading, 24)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarLeading) {
+                CustomBackButton {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }
+        }
+        
     }
 }
 

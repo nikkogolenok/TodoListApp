@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SuccesfulView: View {
+    
+    @Environment (\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
         VStack(spacing: 0) {
             Image("succesful")
@@ -25,6 +28,14 @@ struct SuccesfulView: View {
                 .foregroundColor(FontsStyleManager.Roboto.colorThin)
                 .multilineTextAlignment(.center)
                 .padding(.init(top: 0, leading: 23, bottom: 0, trailing: 22))
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarLeading) {
+                CustomBackButton {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }
         }
     }
 }

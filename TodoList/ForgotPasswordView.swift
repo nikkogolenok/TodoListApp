@@ -10,6 +10,7 @@ import SwiftUI
 struct ForgotPasswordView: View {
     
     @State private var emailTextField = ""
+    @Environment (\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         VStack(alignment: .leading, spacing: 50) {
@@ -34,8 +35,8 @@ struct ForgotPasswordView: View {
                     .foregroundColor(.gray)
             }
             
-            Button("Send Request") {
-                print("Send Request")
+            NavigationLink("Send Request") {
+                ResetPasswordView()
             }
             .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
             .frame(width: 327, height: 48)
@@ -45,6 +46,14 @@ struct ForgotPasswordView: View {
         }
         .padding(.top, 0)
         .padding(.leading, 24)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarLeading) {
+                CustomBackButton {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }
+        }
     }
 }
 
