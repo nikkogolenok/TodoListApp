@@ -28,6 +28,7 @@ struct ForgotPasswordView: View {
             VStack(alignment: .leading, spacing: 17) {
                 Text("Username")
                 TextField("Enter your email", text: $emailTextField)
+                    .keyboardType(.emailAddress)
                 Rectangle()
                     .frame(width: 326, height: 3)
                     .foregroundColor(.gray)

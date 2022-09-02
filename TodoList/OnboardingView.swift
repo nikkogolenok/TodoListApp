@@ -12,27 +12,28 @@ struct OnboardingView: View {
     @State private var currentIndex = 0
     
     var body: some View {
-        TabView {
-            OnboardView(imageName: "onbordingImageFirst",
-                        title: "Welcom to todo list",
-                        description: "Whats going to happen tomarrow?",
-                        imageNameBottom: "groupOne",
-                        bottonName: "Get Started")
-            
-            OnboardView(imageName: "onbordingImageSecond",
-                        title: "Work happens",
-                        description: "Get notified when work happens.",
-                        imageNameBottom: "groupTwo",
-                        bottonName: "Get Started")
-            
-            OnboardView(imageName: "onbordingImageThird",
-                        title: "Tasks and assign",
-                        description: "Task and assign them to colleagues.",
-                        imageNameBottom: "groupThree",
-                        bottonName: "Get Started")
-        }
-        .tabViewStyle(PageTabViewStyle())
-        .ignoresSafeArea(.container, edges: .all)
+        
+            TabView {
+                OnboardView(imageName: "onbordingImageFirst",
+                            title: "Welcom to todo list",
+                            description: "Whats going to happen tomarrow?",
+                            imageNameBottom: "groupOne",
+                            bottonName: "Get Started")
+                
+                OnboardView(imageName: "onbordingImageSecond",
+                            title: "Work happens",
+                            description: "Get notified when work happens.",
+                            imageNameBottom: "groupTwo",
+                            bottonName: "Get Started")
+                
+                OnboardView(imageName: "onbordingImageThird",
+                            title: "Tasks and assign",
+                            description: "Task and assign them to colleagues.",
+                            imageNameBottom: "groupThree",
+                            bottonName: "Get Started")
+            }
+            .tabViewStyle(PageTabViewStyle())
+            .ignoresSafeArea(.container, edges: .all)
     }
 }
 
@@ -72,9 +73,12 @@ struct OnboardView: View {
                     .ignoresSafeArea()
                     .frame(width: 438, height: 322)
                 
-                Button(bottonName) {
-                    print("1")
-                }
+//                Button(bottonName) {
+//                    print("1")
+//                }
+                NavigationLink(destination: SignUpView(), label: {
+                    Text(bottonName)
+                })
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                 .frame(width: 293, height: 48)
                 .background(Color.white)
