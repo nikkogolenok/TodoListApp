@@ -14,88 +14,83 @@ struct SignUpView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
+        VStack(spacing: 0) {
+            VStack() {
+                Text("Welcom")
+                    .padding(.init(top: 94, leading: 0, bottom: 0, trailing: 224))
+                    .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
+                    .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                Text("Sign up to continue")
+                    .padding(.init(top: 12, leading: 0, bottom: 0, trailing: 213))
+                    .font(.custom(FontsStyleManager.Roboto.thin, size: 16))
+                    .foregroundColor(FontsStyleManager.Roboto.colorMedium)
+            }
+            
+            ZStack(alignment: .center) {
+                Image("photoImage")
+                    .padding(.init(top: 28, leading: 0, bottom: 0, trailing: 0))
+                Button("") {
+                    print("photoImage")
+                }
+                .frame(width: 104, height: 104)
+                .cornerRadius(52)
+                .padding(.top, 28)
+            }
+            
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Username")
+                    .font(.custom(FontsStyleManager.Roboto.medium, size: 20))
+                
+                TextField("Enter your email", text: $emailTextField)
+                    .keyboardType(.emailAddress)
+                
+                Rectangle()
+                    .frame(width: 326, height: 3)
+                    .foregroundColor(.gray)
+            }
+            .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
+            
+            
             VStack(alignment: .leading) {
+                Text("Password")
+                    .font(.custom(FontsStyleManager.Roboto.medium, size: 20))
+                SecureField("Enter your password", text: $passwordTextField)
                 
-                VStack(alignment: .leading) {
-                    Text("Welcom")
-                        .frame(width: 127, height: 41, alignment: .leading)
-                        .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
-                        .foregroundColor(FontsStyleManager.Roboto.colorThin)
-                    Text("Sign up to continue")
-                        .frame(width: 138, height: 19, alignment: .leading)
-                        .font(.custom(FontsStyleManager.Roboto.thin, size: 16))
-                        .foregroundColor(FontsStyleManager.Roboto.colorMedium)
-                }
-                .padding(.top, 0)
-                .padding(.leading, 30)
-                .padding(.trailing, 153)
-                .padding(.bottom, 50)
-                
-                Circle()
-                    .strokeBorder(FontsStyleManager.Roboto.colorRed, lineWidth: 2)
-                    .background(Circle().fill(FontsStyleManager.Roboto.colorGray))
-                    .frame(width: 108, height: 108)
-                    .padding(.leading, 127)
-                
-                VStack(alignment: .leading) {
-                    Text("Username")
-                    
-                    TextField("Enter your email", text: $emailTextField)
-                        .keyboardType(.emailAddress)
-                    Rectangle()
-                        .frame(width: 326, height: 3)
-                        .foregroundColor(.gray)
-                }
-                .padding(.leading, 30)
-                .padding(.top, 25)
-                .padding(.trailing, 20)
-                
-                VStack(alignment: .leading) {
-                    Text("Password")
-                    SecureField("Enter your password", text: $passwordTextField)
-                    Rectangle()
-                        .frame(width: 326, height: 3)
-                        .foregroundColor(.gray)
-                }
-                .padding(.leading, 30)
-                .padding(.top, 25)
-                .padding(.trailing, 20)
-                
-                VStack(alignment: .center, spacing: 51) {
-//                    Button("Sign Up") {
-//                        print("SignUp")
-//                    }
-                    NavigationLink(destination: SignInView(), label: {
-                        Text("Sign Up")
-                    })
-                    .frame(width: 327, height: 48)
-                    .background(FontsStyleManager.Roboto.colorRed)
-                    .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                    .foregroundColor(FontsStyleManager.Roboto.colorThin)
-                    .cornerRadius(5)
-                    
-//                    Button("Sign In") {
-//                        print("SignIn")
-//                    }
-                    NavigationLink(destination: SignInView(), label: {
-                        Text("Sign In")
-                    })
-                    .frame(width: 60, height: 21)
-                    .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                    .foregroundColor(FontsStyleManager.Roboto.colorThin)
-                }
-                .padding(.top, 72)
-                .padding(.leading, 30)
+                Rectangle()
+                    .frame(width: 326, height: 3)
+                    .foregroundColor(.gray)
             }
-            //.offset(y: -100)
-            .navigationBarBackButtonHidden(true)
-            .toolbar {
-                ToolbarItemGroup(placement: .navigationBarLeading) {
-                    CustomBackButton {
-                        presentationMode.wrappedValue.dismiss()
-                    }
+            .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
+            
+            VStack(alignment: .center, spacing: 51) {
+                NavigationLink("Sign Up") {
+                    SignInView()
+                }
+                .frame(width: 327, height: 48)
+                .background(FontsStyleManager.Roboto.colorRed)
+                .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
+                .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                .cornerRadius(5)
+                
+                
+                NavigationLink("Sign In") {
+                    SignInView()
+                }
+                .frame(width: 60, height: 21)
+                .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
+                .foregroundColor(FontsStyleManager.Roboto.colorThin)
+            }
+            .padding(.init(top: 72, leading: 0, bottom: 0, trailing: 0))
+        }
+        .offset(y: -50)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarLeading) {
+                CustomBackButton {
+                    presentationMode.wrappedValue.dismiss()
                 }
             }
+        }
     }
 }
 
