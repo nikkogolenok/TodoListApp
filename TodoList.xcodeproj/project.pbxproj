@@ -20,6 +20,7 @@
 		447B467928B10635005C7291 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467828B10635005C7291 /* SignUpView.swift */; };
 		447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467A28B106DE005C7291 /* ResetPasswordView.swift */; };
 		4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488230128BCE7EF0026962C /* SplashScreenView.swift */; };
+		44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3201B28C8B6BD0085480E /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		447B467828B10635005C7291 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		447B467A28B106DE005C7291 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		4488230128BCE7EF0026962C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		44B3201B28C8B6BD0085480E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				447B467A28B106DE005C7291 /* ResetPasswordView.swift */,
 				4408268028AFC8590067BA33 /* SuccesfulView.swift */,
 				444AC83C28C23DF2004B48B1 /* CustomBackButton.swift */,
+				44B3201B28C8B6BD0085480E /* ImagePicker.swift */,
 				4408264F28AB7B520067BA33 /* Assets.xcassets */,
 				4408265128AB7B520067BA33 /* Preview Content */,
 			);
@@ -185,6 +188,7 @@
 				4408265A28AB8BB60067BA33 /* LaunchScreenView.swift in Sources */,
 				4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */,
 				447B467528AFF5E2005C7291 /* SignInView.swift in Sources */,
+				44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */,
 				444AC83D28C23DF2004B48B1 /* CustomBackButton.swift in Sources */,
 				4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */,
 			);

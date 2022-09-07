@@ -18,7 +18,7 @@ struct SignInView: View {
             VStack(spacing: 0) {
                 
                 VStack(alignment: .leading) {
-                    Text("Welcom back")
+                    Text("Welcome back")
                         .frame(width: 198, height: 41, alignment: .leading)
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
                         .foregroundColor(FontsStyleManager.Roboto.colorThin)
