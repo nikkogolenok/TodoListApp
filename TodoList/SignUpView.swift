@@ -38,14 +38,9 @@ struct SignUpView: View {
                     .aspectRatio(contentMode: .fill)
                     .clipShape(Circle())
                     .padding(.init(top: 28, leading: 0, bottom: 0, trailing: 0))
-                    
-                Text("x")
-                .frame(width: 104, height: 104)
-                .cornerRadius(52)
-                .padding(.top, 28)
-                .onTapGesture {
-                    showSheet = true
-                }
+                    .onTapGesture {
+                        showSheet = true
+                    }
             }
             
             VStack(alignment: .leading, spacing: 15) {
