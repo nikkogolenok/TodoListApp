@@ -19,11 +19,11 @@ struct ResetPasswordView: View {
                 Text("Reset Password")
                     .frame(width: 236, height: 41)
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 30))
-                    .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                    .foregroundColor(FontStyleColors.colorThin)
                 Text("Reset code was sent to your email. Please enter the code and create new password")
                     .frame(width: 340, height: 38)
                     .font(.custom(FontsStyleManager.Roboto.medium, size: 16))
-                    .foregroundColor(FontsStyleManager.Roboto.colorMedium)
+                    .foregroundColor(FontStyleColors.colorMedium)
                     .multilineTextAlignment(.leading)
             }
             

@@ -11,9 +11,5 @@ struct FontsStyleManager {
     struct Roboto {
         static let thin        = "Roboto-ThinItalic"
         static let medium      = "Roboto-Medium"
-        static let colorThin   = Color("ColorThin")
-        static let colorMedium = Color("ColorMedium")
-        static let colorRed    = Color("ColorRed")
-        static let colorGray   = Color("ColorGray")
     }
 }

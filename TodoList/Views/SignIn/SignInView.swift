@@ -21,13 +21,13 @@ struct SignInView: View {
                     Text("Welcome back")
                         .frame(width: 198, height: 41, alignment: .leading)
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
-                        .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                        .foregroundColor(FontStyleColors.colorThin)
                     
                     
                     Text("Sign up to continue")
                         .frame(width: 138, height: 19, alignment: .leading)
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 16))
-                        .foregroundColor(FontsStyleManager.Roboto.colorMedium)
+                        .foregroundColor(FontStyleColors.colorMedium)
                 }
                 .padding(.top, 0)
                 .padding(.leading, 30)
@@ -73,16 +73,16 @@ struct SignInView: View {
                         print("SignUp")
                     }
                     .frame(width: 327, height: 48)
-                    .background(FontsStyleManager.Roboto.colorRed)
+                    .background(FontStyleColors.colorRed)
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                    .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                    .foregroundColor(FontStyleColors.colorThin)
                     
                     Button("Sign In") {
                         print("SignIn")
                     }
                     .frame(width: 60, height: 21)
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                    .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                    .foregroundColor(FontStyleColors.colorThin)
                 }
                 .padding(.top, 72)
                 //.padding(.leading, 30)

@@ -18,11 +18,11 @@ struct ForgotPasswordView: View {
                 Text("Forgot Password")
                     .frame(width: 248, height: 41)
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 30))
-                    .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                    .foregroundColor(FontStyleColors.colorThin)
                 Text("Please enter your email below to recevie your password reset instructions")
                     .frame(width: 340, height: 38)
                     .font(.custom(FontsStyleManager.Roboto.medium, size: 16))
-                    .foregroundColor(FontsStyleManager.Roboto.colorMedium)
+                    .foregroundColor(FontStyleColors.colorMedium)
                     .multilineTextAlignment(.leading)
             }
             

@@ -22,11 +22,11 @@ struct SignUpView: View {
                 Text("Welcome")
                     .padding(.init(top: 94, leading: 0, bottom: 0, trailing: 224))
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
-                    .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                    .foregroundColor(FontStyleColors.colorThin)
                 Text("Sign up to continue")
                     .padding(.init(top: 12, leading: 0, bottom: 0, trailing: 213))
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 16))
-                    .foregroundColor(FontsStyleManager.Roboto.colorMedium)
+                    .foregroundColor(FontStyleColors.colorMedium)
             }
             
             ZStack(alignment: .center) {
@@ -73,9 +73,9 @@ struct SignUpView: View {
                     SignInView()
                 }
                 .frame(width: 327, height: 48)
-                .background(FontsStyleManager.Roboto.colorRed)
+                .background(FontStyleColors.colorRed)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                .foregroundColor(FontStyleColors.colorThin)
                 .cornerRadius(5)
                 
                 
@@ -84,7 +84,7 @@ struct SignUpView: View {
                 }
                 .frame(width: 60, height: 21)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                .foregroundColor(FontStyleColors.colorThin)
             }
             .padding(.init(top: 72, leading: 0, bottom: 0, trailing: 0))
         }

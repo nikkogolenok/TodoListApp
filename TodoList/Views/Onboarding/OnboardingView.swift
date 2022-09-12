@@ -100,12 +100,12 @@ struct OnboardView: View {
             Spacer()
             Text(title)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 24))
-                .foregroundColor(FontsStyleManager.Roboto.colorThin)
+                .foregroundColor(FontStyleColors.colorThin)
                 .padding(.init(top: 0, leading: 0, bottom: 11, trailing: 0))
             
             Text(description)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 19))
-                .foregroundColor(FontsStyleManager.Roboto.colorMedium)
+                .foregroundColor(FontStyleColors.colorMedium)
                 .opacity(0.8)
             Spacer()
         }
