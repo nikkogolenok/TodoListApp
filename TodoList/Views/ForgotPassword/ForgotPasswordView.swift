@@ -46,6 +46,7 @@ struct ForgotPasswordView: View {
         }
         .padding(.top, 0)
         .padding(.leading, 24)
+        .offset(y: -100)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarLeading) {

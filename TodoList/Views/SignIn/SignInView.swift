@@ -18,21 +18,17 @@ struct SignInView: View {
             VStack(spacing: 0) {
                 
                 VStack(alignment: .leading) {
-                    Text("Welcome back")
-                        .frame(width: 198, height: 41, alignment: .leading)
+                    Text("Welcome")
+                        .padding(.init(top: 94, leading: 0, bottom: 0, trailing: 224))
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
                         .foregroundColor(FontStyleColors.colorThin)
                     
                     
                     Text("Sign up to continue")
-                        .frame(width: 138, height: 19, alignment: .leading)
+                        .padding(.init(top: 12, leading: 0, bottom: 0, trailing: 213))
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 16))
                         .foregroundColor(FontStyleColors.colorMedium)
                 }
-                .padding(.top, 0)
-                .padding(.leading, 30)
-                .padding(.trailing, 153)
-                .padding(.bottom, 50)
                 
                 VStack(alignment: .leading) {
                     Text("Username")
@@ -43,9 +39,7 @@ struct SignInView: View {
                         .frame(width: 326, height: 3)
                         .foregroundColor(.gray)
                 }
-                .padding(.leading, 30)
-                .padding(.top, 25)
-                .padding(.trailing, 20)
+                .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
                 
                 VStack(alignment: .leading) {
                     Text("Password")
@@ -54,11 +48,8 @@ struct SignInView: View {
                         .frame(width: 326, height: 3)
                         .foregroundColor(.gray)
                 }
-                .padding(.leading, 30)
-                .padding(.top, 25)
-                .padding(.trailing, 20)
+                .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
                 
-
                 NavigationLink(destination: ForgotPasswordView(), label: {
                     Text("Forgot password")
                 })
@@ -85,8 +76,8 @@ struct SignInView: View {
                     .foregroundColor(FontStyleColors.colorThin)
                 }
                 .padding(.top, 72)
-                //.padding(.leading, 30)
             }
+            .offset(y: -50)
             .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {

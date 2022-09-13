@@ -29,6 +29,7 @@ struct SuccesfulView: View {
                 .multilineTextAlignment(.center)
                 .padding(.init(top: 0, leading: 23, bottom: 0, trailing: 22))
         }
+        .offset(y: -100)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarLeading) {
