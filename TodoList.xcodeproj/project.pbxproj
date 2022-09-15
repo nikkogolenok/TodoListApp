@@ -13,6 +13,9 @@
 		4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408265B28AB95400067BA33 /* OnboardingView.swift */; };
 		4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408266428ABDB730067BA33 /* FontsStyleManager.swift */; };
 		4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408268028AFC8590067BA33 /* SuccesfulView.swift */; };
+		4449A01528D0BC64001720DD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01428D0BC64001720DD /* UserModel.swift */; };
+		4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01728D0BE29001720DD /* UserViewModel.swift */; };
+		4449A01A28D0C432001720DD /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01928D0C432001720DD /* TokenModel.swift */; };
 		444AC83D28C23DF2004B48B1 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444AC83C28C23DF2004B48B1 /* CustomBackButton.swift */; };
 		447B467528AFF5E2005C7291 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467428AFF5E2005C7291 /* SignInView.swift */; };
 		447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467628B0FC64005C7291 /* ForgotPasswordView.swift */; };
@@ -33,6 +36,9 @@
 		4408266328ABDB590067BA33 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		4408266428ABDB730067BA33 /* FontsStyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsStyleManager.swift; sourceTree = "<group>"; };
 		4408268028AFC8590067BA33 /* SuccesfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesfulView.swift; sourceTree = "<group>"; };
+		4449A01428D0BC64001720DD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4449A01728D0BE29001720DD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		4449A01928D0C432001720DD /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		444AC83C28C23DF2004B48B1 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		447B467428AFF5E2005C7291 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		447B467628B0FC64005C7291 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 		4408264A28AB7B4F0067BA33 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				4449A01628D0BE0C001720DD /* ViewModel */,
+				4449A01328D0BC47001720DD /* Model */,
 				4486D8CB28CF37FC001343D7 /* Views */,
 				4408266128ABD9E70067BA33 /* Fonts */,
 				4408264F28AB7B520067BA33 /* Assets.xcassets */,
@@ -98,6 +106,23 @@
 				4486D8CF28CF579C001343D7 /* FontStyleColors.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4449A01328D0BC47001720DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4449A01428D0BC64001720DD /* UserModel.swift */,
+				4449A01928D0C432001720DD /* TokenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4449A01628D0BE0C001720DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4449A01728D0BE29001720DD /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4486D8C528CF34C2001343D7 /* Onboarding */ = {
@@ -264,12 +289,15 @@
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,
 				447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
+				4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */,
+				4449A01528D0BC64001720DD /* UserModel.swift in Sources */,
 				447B467928B10635005C7291 /* SignUpView.swift in Sources */,
 				4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */,
 				447B467528AFF5E2005C7291 /* SignInView.swift in Sources */,
 				44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */,
 				444AC83D28C23DF2004B48B1 /* CustomBackButton.swift in Sources */,
 				4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */,
+				4449A01A28D0C432001720DD /* TokenModel.swift in Sources */,
 				4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

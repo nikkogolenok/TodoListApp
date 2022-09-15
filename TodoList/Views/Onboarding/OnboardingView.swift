@@ -109,7 +109,7 @@ struct OnboardView: View {
                 .opacity(0.8)
             Spacer()
         }
-        .offset(y: -150)
+        .offset(y: -50)
     }
 }
 
