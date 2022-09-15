@@ -13,7 +13,7 @@ struct CustomBackButton: View {
     var body: some View {
         Button(action: action) {
             Image(systemName: "arrow.backward")
-                .foregroundColor(.black)
+                .foregroundColor(FontStyleColors.colorButton)
         }
     }
 }

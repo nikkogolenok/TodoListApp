@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct TodoListApp: App {
+    @StateObject var viewRouter = ViewRouter()
     var body: some Scene {
         WindowGroup {
             SplashScreenView()
+            //WorkListView(viewRouter: viewRouter)
         }
     }
 }

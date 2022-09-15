@@ -13,4 +13,5 @@ struct FontStyleColors {
     static let colorRed    = Color("colorRed")
     static let colorGray   = Color("colorGray")
     static let colorBar    = Color("barColor")
+    static let colorButton = Color("colorBackButton")
 }

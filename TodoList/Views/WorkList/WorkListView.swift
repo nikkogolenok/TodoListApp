@@ -32,7 +32,7 @@ struct WorkListView: View {
                 HStack {
                     
                     let geometryWidth: CGFloat = geometry.size.width/5
-                    let geometryHeight: CGFloat = geometry.size.width/28
+                    let geometryHeight: CGFloat = geometry.size.width/15
                     
                     TabBarIcon(viewRouter: viewRouter, assignedPage: .myTask, width: geometryWidth, height: geometryHeight, systemIconName: "checkmark.circle.fill", tabName: "My Task")
                     
