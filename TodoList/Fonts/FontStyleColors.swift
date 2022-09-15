@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct FontStyleColors {
-    static let colorThin   = Color("ColorThin")
-    static let colorMedium = Color("ColorMedium")
-    static let colorRed    = Color("ColorRed")
-    static let colorGray   = Color("ColorGray")
+    static let colorThin   = Color("colorThin")
+    static let colorMedium = Color("colorMedium")
+    static let colorRed    = Color("colorRed")
+    static let colorGray   = Color("colorGray")
+    static let colorBar    = Color("barColor")
 }

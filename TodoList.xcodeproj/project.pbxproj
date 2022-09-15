@@ -13,6 +13,9 @@
 		4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408265B28AB95400067BA33 /* OnboardingView.swift */; };
 		4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408266428ABDB730067BA33 /* FontsStyleManager.swift */; };
 		4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408268028AFC8590067BA33 /* SuccesfulView.swift */; };
+		4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62128D32B6B004EE93E /* WorkListView.swift */; };
+		4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62328D32BF3004EE93E /* ViewRouter.swift */; };
+		4428B62728D32CF4004EE93E /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62628D32CF4004EE93E /* TabBarIcon.swift */; };
 		4449A01528D0BC64001720DD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01428D0BC64001720DD /* UserModel.swift */; };
 		4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01728D0BE29001720DD /* UserViewModel.swift */; };
 		4449A01A28D0C432001720DD /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01928D0C432001720DD /* TokenModel.swift */; };
@@ -36,6 +39,9 @@
 		4408266328ABDB590067BA33 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		4408266428ABDB730067BA33 /* FontsStyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsStyleManager.swift; sourceTree = "<group>"; };
 		4408268028AFC8590067BA33 /* SuccesfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesfulView.swift; sourceTree = "<group>"; };
+		4428B62128D32B6B004EE93E /* WorkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkListView.swift; sourceTree = "<group>"; };
+		4428B62328D32BF3004EE93E /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		4428B62628D32CF4004EE93E /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
 		4449A01428D0BC64001720DD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4449A01728D0BE29001720DD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		4449A01928D0C432001720DD /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
@@ -106,6 +112,24 @@
 				4486D8CF28CF579C001343D7 /* FontStyleColors.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4428B62028D32B37004EE93E /* WorkList */ = {
+			isa = PBXGroup;
+			children = (
+				4428B62528D32CA9004EE93E /* Model */,
+				4428B62128D32B6B004EE93E /* WorkListView.swift */,
+				4428B62328D32BF3004EE93E /* ViewRouter.swift */,
+			);
+			path = WorkList;
+			sourceTree = "<group>";
+		};
+		4428B62528D32CA9004EE93E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4428B62628D32CF4004EE93E /* TabBarIcon.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4449A01328D0BC47001720DD /* Model */ = {
@@ -184,6 +208,7 @@
 				4486D8C828CF3501001343D7 /* ForgotPassword */,
 				4486D8C928CF351E001343D7 /* ResetPassword */,
 				4486D8CA28CF3531001343D7 /* Succesful */,
+				4428B62028D32B37004EE93E /* WorkList */,
 				4486D8CE28CF5729001343D7 /* CustomView */,
 			);
 			path = Views;
@@ -291,11 +316,14 @@
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
 				4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */,
 				4449A01528D0BC64001720DD /* UserModel.swift in Sources */,
+				4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */,
 				447B467928B10635005C7291 /* SignUpView.swift in Sources */,
 				4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */,
 				447B467528AFF5E2005C7291 /* SignInView.swift in Sources */,
 				44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */,
+				4428B62728D32CF4004EE93E /* TabBarIcon.swift in Sources */,
 				444AC83D28C23DF2004B48B1 /* CustomBackButton.swift in Sources */,
+				4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */,
 				4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */,
 				4449A01A28D0C432001720DD /* TokenModel.swift in Sources */,
 				4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */,
