@@ -10,9 +10,10 @@ import SwiftUI
 struct SignUpView: View {
     
     // MARK: - Variables
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @StateObject var viewRouter = ViewRouter()
     @State private var emailTextField = ""
     @State private var passwordTextField = ""
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var image = UIImage()
     @State private var showSheet = false
     
@@ -81,7 +82,7 @@ struct SignUpView: View {
                 
                 
                 NavigationLink("Sign In") {
-                    SignInView()
+                    WorkListView(viewRouter: viewRouter)
                 }
                 .frame(width: 60, height: 21)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))

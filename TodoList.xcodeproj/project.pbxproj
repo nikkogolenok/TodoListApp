@@ -114,22 +114,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		4428B62028D32B37004EE93E /* WorkList */ = {
+		4428B62028D32B37004EE93E /* WorkListView */ = {
 			isa = PBXGroup;
 			children = (
-				4428B62528D32CA9004EE93E /* Model */,
 				4428B62128D32B6B004EE93E /* WorkListView.swift */,
+				4428B62628D32CF4004EE93E /* TabBarIcon.swift */,
 				4428B62328D32BF3004EE93E /* ViewRouter.swift */,
 			);
-			path = WorkList;
-			sourceTree = "<group>";
-		};
-		4428B62528D32CA9004EE93E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				4428B62628D32CF4004EE93E /* TabBarIcon.swift */,
-			);
-			path = Model;
+			path = WorkListView;
 			sourceTree = "<group>";
 		};
 		4449A01328D0BC47001720DD /* Model */ = {
@@ -149,52 +141,52 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		4486D8C528CF34C2001343D7 /* Onboarding */ = {
+		4486D8C528CF34C2001343D7 /* OnboardingView */ = {
 			isa = PBXGroup;
 			children = (
 				4408265B28AB95400067BA33 /* OnboardingView.swift */,
 			);
-			path = Onboarding;
+			path = OnboardingView;
 			sourceTree = "<group>";
 		};
-		4486D8C628CF34D3001343D7 /* SignUp */ = {
+		4486D8C628CF34D3001343D7 /* SignUpView */ = {
 			isa = PBXGroup;
 			children = (
 				447B467828B10635005C7291 /* SignUpView.swift */,
 			);
-			path = SignUp;
+			path = SignUpView;
 			sourceTree = "<group>";
 		};
-		4486D8C728CF34EA001343D7 /* SignIn */ = {
+		4486D8C728CF34EA001343D7 /* SignInView */ = {
 			isa = PBXGroup;
 			children = (
 				447B467428AFF5E2005C7291 /* SignInView.swift */,
 			);
-			path = SignIn;
+			path = SignInView;
 			sourceTree = "<group>";
 		};
-		4486D8C828CF3501001343D7 /* ForgotPassword */ = {
+		4486D8C828CF3501001343D7 /* ForgotPasswordView */ = {
 			isa = PBXGroup;
 			children = (
 				447B467628B0FC64005C7291 /* ForgotPasswordView.swift */,
 			);
-			path = ForgotPassword;
+			path = ForgotPasswordView;
 			sourceTree = "<group>";
 		};
-		4486D8C928CF351E001343D7 /* ResetPassword */ = {
+		4486D8C928CF351E001343D7 /* ResetPasswordView */ = {
 			isa = PBXGroup;
 			children = (
 				447B467A28B106DE005C7291 /* ResetPasswordView.swift */,
 			);
-			path = ResetPassword;
+			path = ResetPasswordView;
 			sourceTree = "<group>";
 		};
-		4486D8CA28CF3531001343D7 /* Succesful */ = {
+		4486D8CA28CF3531001343D7 /* SuccesfulView */ = {
 			isa = PBXGroup;
 			children = (
 				4408268028AFC8590067BA33 /* SuccesfulView.swift */,
 			);
-			path = Succesful;
+			path = SuccesfulView;
 			sourceTree = "<group>";
 		};
 		4486D8CB28CF37FC001343D7 /* Views */ = {
@@ -202,13 +194,13 @@
 			children = (
 				4486D8CD28CF38EC001343D7 /* TodoListApp */,
 				4486D8CC28CF38B2001343D7 /* SplashScreen */,
-				4486D8C528CF34C2001343D7 /* Onboarding */,
-				4486D8C628CF34D3001343D7 /* SignUp */,
-				4486D8C728CF34EA001343D7 /* SignIn */,
-				4486D8C828CF3501001343D7 /* ForgotPassword */,
-				4486D8C928CF351E001343D7 /* ResetPassword */,
-				4486D8CA28CF3531001343D7 /* Succesful */,
-				4428B62028D32B37004EE93E /* WorkList */,
+				4486D8C528CF34C2001343D7 /* OnboardingView */,
+				4486D8C628CF34D3001343D7 /* SignUpView */,
+				4486D8C728CF34EA001343D7 /* SignInView */,
+				4486D8C828CF3501001343D7 /* ForgotPasswordView */,
+				4486D8C928CF351E001343D7 /* ResetPasswordView */,
+				4486D8CA28CF3531001343D7 /* SuccesfulView */,
+				4428B62028D32B37004EE93E /* WorkListView */,
 				4486D8CE28CF5729001343D7 /* CustomView */,
 			);
 			path = Views;

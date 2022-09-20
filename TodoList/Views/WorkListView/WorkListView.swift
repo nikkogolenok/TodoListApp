@@ -9,9 +9,12 @@ import SwiftUI
 
 struct WorkListView: View {
     
+    // MARK: - Variables
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject var viewRouter: ViewRouter
     @State var showPopUp = false
     
+    // MARK: - Body
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -65,6 +68,14 @@ struct WorkListView: View {
                 .background(FontStyleColors.colorBar.shadow(radius: 2))
             }
             .edgesIgnoringSafeArea(.bottom)
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarLeading) {
+                CustomBackButton {
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }
         }
     }
 }
