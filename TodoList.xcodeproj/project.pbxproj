@@ -24,6 +24,12 @@
 		447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467628B0FC64005C7291 /* ForgotPasswordView.swift */; };
 		447B467928B10635005C7291 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467828B10635005C7291 /* SignUpView.swift */; };
 		447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467A28B106DE005C7291 /* ResetPasswordView.swift */; };
+		447F33A228D9C312004D7517 /* QuickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F33A128D9C312004D7517 /* QuickView.swift */; };
+		447F33A428D9C322004D7517 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F33A328D9C322004D7517 /* TodayView.swift */; };
+		447F33A628D9C32F004D7517 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F33A528D9C32F004D7517 /* MonthView.swift */; };
+		447F33A828D9C33A004D7517 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F33A728D9C33A004D7517 /* TaskView.swift */; };
+		447F33AA28D9C344004D7517 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F33A928D9C344004D7517 /* MenuView.swift */; };
+		447F33AC28D9C34E004D7517 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F33AB28D9C34E004D7517 /* ProfileView.swift */; };
 		4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486D8CF28CF579C001343D7 /* FontStyleColors.swift */; };
 		4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488230128BCE7EF0026962C /* SplashScreenView.swift */; };
 		44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3201B28C8B6BD0085480E /* ImagePicker.swift */; };
@@ -50,6 +56,12 @@
 		447B467628B0FC64005C7291 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		447B467828B10635005C7291 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		447B467A28B106DE005C7291 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		447F33A128D9C312004D7517 /* QuickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickView.swift; sourceTree = "<group>"; };
+		447F33A328D9C322004D7517 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		447F33A528D9C32F004D7517 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		447F33A728D9C33A004D7517 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		447F33A928D9C344004D7517 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		447F33AB28D9C34E004D7517 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4486D8CF28CF579C001343D7 /* FontStyleColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyleColors.swift; sourceTree = "<group>"; };
 		4488230128BCE7EF0026962C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		44B3201B28C8B6BD0085480E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -141,6 +153,54 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		447F339B28D9C26E004D7517 /* TaskView */ = {
+			isa = PBXGroup;
+			children = (
+				447F33A728D9C33A004D7517 /* TaskView.swift */,
+			);
+			path = TaskView;
+			sourceTree = "<group>";
+		};
+		447F339C28D9C289004D7517 /* TodayView */ = {
+			isa = PBXGroup;
+			children = (
+				447F33A328D9C322004D7517 /* TodayView.swift */,
+			);
+			path = TodayView;
+			sourceTree = "<group>";
+		};
+		447F339D28D9C293004D7517 /* MonthView */ = {
+			isa = PBXGroup;
+			children = (
+				447F33A528D9C32F004D7517 /* MonthView.swift */,
+			);
+			path = MonthView;
+			sourceTree = "<group>";
+		};
+		447F339E28D9C2D7004D7517 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				447F33A928D9C344004D7517 /* MenuView.swift */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		447F339F28D9C2E6004D7517 /* QuickView */ = {
+			isa = PBXGroup;
+			children = (
+				447F33A128D9C312004D7517 /* QuickView.swift */,
+			);
+			path = QuickView;
+			sourceTree = "<group>";
+		};
+		447F33A028D9C2F6004D7517 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				447F33AB28D9C34E004D7517 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
 		4486D8C528CF34C2001343D7 /* OnboardingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +261,12 @@
 				4486D8C928CF351E001343D7 /* ResetPasswordView */,
 				4486D8CA28CF3531001343D7 /* SuccesfulView */,
 				4428B62028D32B37004EE93E /* WorkListView */,
+				447F339C28D9C289004D7517 /* TodayView */,
+				447F339D28D9C293004D7517 /* MonthView */,
+				447F339B28D9C26E004D7517 /* TaskView */,
+				447F339E28D9C2D7004D7517 /* MenuView */,
+				447F339F28D9C2E6004D7517 /* QuickView */,
+				447F33A028D9C2F6004D7517 /* ProfileView */,
 				4486D8CE28CF5729001343D7 /* CustomView */,
 			);
 			path = Views;
@@ -301,23 +367,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447F33AA28D9C344004D7517 /* MenuView.swift in Sources */,
 				4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */,
 				447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */,
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,
 				447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */,
+				447F33A228D9C312004D7517 /* QuickView.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
 				4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */,
 				4449A01528D0BC64001720DD /* UserModel.swift in Sources */,
 				4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */,
+				447F33A828D9C33A004D7517 /* TaskView.swift in Sources */,
 				447B467928B10635005C7291 /* SignUpView.swift in Sources */,
 				4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */,
 				447B467528AFF5E2005C7291 /* SignInView.swift in Sources */,
 				44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */,
+				447F33A628D9C32F004D7517 /* MonthView.swift in Sources */,
+				447F33AC28D9C34E004D7517 /* ProfileView.swift in Sources */,
 				4428B62728D32CF4004EE93E /* TabBarIcon.swift in Sources */,
 				444AC83D28C23DF2004B48B1 /* CustomBackButton.swift in Sources */,
 				4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */,
 				4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */,
 				4449A01A28D0C432001720DD /* TokenModel.swift in Sources */,
+				447F33A428D9C322004D7517 /* TodayView.swift in Sources */,
 				4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

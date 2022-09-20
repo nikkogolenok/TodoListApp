@@ -22,13 +22,13 @@ struct WorkListView: View {
                 Spacer()
                 switch viewRouter.currentPage {
                 case .myTask:
-                    Text("My Task")
+                    TaskView()
                 case .menu:
-                    Text("Menu")
+                    MenuView()
                 case .quick:
-                    Text("Quick")
+                    QuickView()
                 case .profile:
-                    Text("Profile")
+                    ProfileView()
                 }
                 Spacer()
                 
@@ -70,13 +70,6 @@ struct WorkListView: View {
             .edgesIgnoringSafeArea(.bottom)
         }
         .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItemGroup(placement: .navigationBarLeading) {
-                CustomBackButton {
-                    presentationMode.wrappedValue.dismiss()
-                }
-            }
-        }
     }
 }
 
