@@ -13,6 +13,13 @@
 		4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408265B28AB95400067BA33 /* OnboardingView.swift */; };
 		4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408266428ABDB730067BA33 /* FontsStyleManager.swift */; };
 		4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408268028AFC8590067BA33 /* SuccesfulView.swift */; };
+		441F6EFB28E30C1200A85DBC /* SignUpUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F6EFA28E30C1200A85DBC /* SignUpUseCase.swift */; };
+		441F6EFD28E30C2E00A85DBC /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F6EFC28E30C2E00A85DBC /* SignInUseCase.swift */; };
+		441F6EFF28E30C9E00A85DBC /* RefreshTokenUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F6EFE28E30C9E00A85DBC /* RefreshTokenUseCase.swift */; };
+		441F6F0128E30CB600A85DBC /* SignOutUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F6F0028E30CB600A85DBC /* SignOutUseCase.swift */; };
+		441F6F0428E30DE200A85DBC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F6F0328E30DE200A85DBC /* ApiClient.swift */; };
+		441F6F0628E30FE600A85DBC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F6F0528E30FE500A85DBC /* ApiService.swift */; };
+		441F6F0828E3126400A85DBC /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441F6F0728E3126400A85DBC /* RemoteService.swift */; };
 		4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62128D32B6B004EE93E /* WorkListView.swift */; };
 		4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62328D32BF3004EE93E /* ViewRouter.swift */; };
 		4428B62728D32CF4004EE93E /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62628D32CF4004EE93E /* TabBarIcon.swift */; };
@@ -45,6 +52,13 @@
 		4408266328ABDB590067BA33 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		4408266428ABDB730067BA33 /* FontsStyleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsStyleManager.swift; sourceTree = "<group>"; };
 		4408268028AFC8590067BA33 /* SuccesfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesfulView.swift; sourceTree = "<group>"; };
+		441F6EFA28E30C1200A85DBC /* SignUpUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUseCase.swift; sourceTree = "<group>"; };
+		441F6EFC28E30C2E00A85DBC /* SignInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
+		441F6EFE28E30C9E00A85DBC /* RefreshTokenUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenUseCase.swift; sourceTree = "<group>"; };
+		441F6F0028E30CB600A85DBC /* SignOutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutUseCase.swift; sourceTree = "<group>"; };
+		441F6F0328E30DE200A85DBC /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		441F6F0528E30FE500A85DBC /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		441F6F0728E3126400A85DBC /* RemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
 		4428B62128D32B6B004EE93E /* WorkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkListView.swift; sourceTree = "<group>"; };
 		4428B62328D32BF3004EE93E /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		4428B62628D32CF4004EE93E /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
@@ -97,6 +111,7 @@
 		4408264A28AB7B4F0067BA33 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				441F6EF828E30B6500A85DBC /* Webservices */,
 				4449A01628D0BE0C001720DD /* ViewModel */,
 				4449A01328D0BC47001720DD /* Model */,
 				4486D8CB28CF37FC001343D7 /* Views */,
@@ -124,6 +139,36 @@
 				4486D8CF28CF579C001343D7 /* FontStyleColors.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		441F6EF828E30B6500A85DBC /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				441F6F0228E30D9D00A85DBC /* Remote */,
+				441F6EF928E30BA500A85DBC /* UseCase */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		441F6EF928E30BA500A85DBC /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				441F6EFA28E30C1200A85DBC /* SignUpUseCase.swift */,
+				441F6EFC28E30C2E00A85DBC /* SignInUseCase.swift */,
+				441F6EFE28E30C9E00A85DBC /* RefreshTokenUseCase.swift */,
+				441F6F0028E30CB600A85DBC /* SignOutUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		441F6F0228E30D9D00A85DBC /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				441F6F0328E30DE200A85DBC /* ApiClient.swift */,
+				441F6F0528E30FE500A85DBC /* ApiService.swift */,
+				441F6F0728E3126400A85DBC /* RemoteService.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		4428B62028D32B37004EE93E /* WorkListView */ = {
@@ -370,15 +415,20 @@
 				447F33AA28D9C344004D7517 /* MenuView.swift in Sources */,
 				4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */,
 				447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */,
+				441F6EFB28E30C1200A85DBC /* SignUpUseCase.swift in Sources */,
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,
 				447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */,
 				447F33A228D9C312004D7517 /* QuickView.swift in Sources */,
+				441F6F0428E30DE200A85DBC /* ApiClient.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
+				441F6EFF28E30C9E00A85DBC /* RefreshTokenUseCase.swift in Sources */,
 				4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */,
 				4449A01528D0BC64001720DD /* UserModel.swift in Sources */,
 				4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */,
 				447F33A828D9C33A004D7517 /* TaskView.swift in Sources */,
 				447B467928B10635005C7291 /* SignUpView.swift in Sources */,
+				441F6EFD28E30C2E00A85DBC /* SignInUseCase.swift in Sources */,
+				441F6F0828E3126400A85DBC /* RemoteService.swift in Sources */,
 				4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */,
 				447B467528AFF5E2005C7291 /* SignInView.swift in Sources */,
 				44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */,
@@ -389,6 +439,8 @@
 				4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */,
 				4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */,
 				4449A01A28D0C432001720DD /* TokenModel.swift in Sources */,
+				441F6F0628E30FE600A85DBC /* ApiService.swift in Sources */,
+				441F6F0128E30CB600A85DBC /* SignOutUseCase.swift in Sources */,
 				447F33A428D9C322004D7517 /* TodayView.swift in Sources */,
 				4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */,
 			);
