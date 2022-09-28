@@ -23,6 +23,11 @@
 		4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62128D32B6B004EE93E /* WorkListView.swift */; };
 		4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62328D32BF3004EE93E /* ViewRouter.swift */; };
 		4428B62728D32CF4004EE93E /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62628D32CF4004EE93E /* TabBarIcon.swift */; };
+		4442350928E47FCD00FAF292 /* Fancy3DotsIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350828E47FCD00FAF292 /* Fancy3DotsIndexView.swift */; };
+		4442350C28E48EC600FAF292 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350B28E48EC600FAF292 /* OnboardView.swift */; };
+		4442350F28E4A9CD00FAF292 /* WelcomLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350E28E4A9CD00FAF292 /* WelcomLabels.swift */; };
+		4442351128E4AC6400FAF292 /* RegistrationTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442351028E4AC6400FAF292 /* RegistrationTextFields.swift */; };
+		4442351328E4B09A00FAF292 /* TwoNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442351228E4B09A00FAF292 /* TwoNavigationLink.swift */; };
 		4449A01528D0BC64001720DD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01428D0BC64001720DD /* UserModel.swift */; };
 		4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01728D0BE29001720DD /* UserViewModel.swift */; };
 		4449A01A28D0C432001720DD /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01928D0C432001720DD /* TokenModel.swift */; };
@@ -62,6 +67,11 @@
 		4428B62128D32B6B004EE93E /* WorkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkListView.swift; sourceTree = "<group>"; };
 		4428B62328D32BF3004EE93E /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		4428B62628D32CF4004EE93E /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
+		4442350828E47FCD00FAF292 /* Fancy3DotsIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fancy3DotsIndexView.swift; sourceTree = "<group>"; };
+		4442350B28E48EC600FAF292 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		4442350E28E4A9CD00FAF292 /* WelcomLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomLabels.swift; sourceTree = "<group>"; };
+		4442351028E4AC6400FAF292 /* RegistrationTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTextFields.swift; sourceTree = "<group>"; };
+		4442351228E4B09A00FAF292 /* TwoNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoNavigationLink.swift; sourceTree = "<group>"; };
 		4449A01428D0BC64001720DD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4449A01728D0BE29001720DD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		4449A01928D0C432001720DD /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
@@ -181,6 +191,24 @@
 			path = WorkListView;
 			sourceTree = "<group>";
 		};
+		4442350A28E48EB000FAF292 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4442350B28E48EC600FAF292 /* OnboardView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4442350D28E4A96100FAF292 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4442350E28E4A9CD00FAF292 /* WelcomLabels.swift */,
+				4442351028E4AC6400FAF292 /* RegistrationTextFields.swift */,
+				4442351228E4B09A00FAF292 /* TwoNavigationLink.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4449A01328D0BC47001720DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +277,7 @@
 		4486D8C528CF34C2001343D7 /* OnboardingView */ = {
 			isa = PBXGroup;
 			children = (
+				4442350A28E48EB000FAF292 /* Model */,
 				4408265B28AB95400067BA33 /* OnboardingView.swift */,
 			);
 			path = OnboardingView;
@@ -297,6 +326,7 @@
 		4486D8CB28CF37FC001343D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4442350D28E4A96100FAF292 /* ViewModel */,
 				4486D8CD28CF38EC001343D7 /* TodoListApp */,
 				4486D8CC28CF38B2001343D7 /* SplashScreen */,
 				4486D8C528CF34C2001343D7 /* OnboardingView */,
@@ -338,6 +368,7 @@
 			children = (
 				44B3201B28C8B6BD0085480E /* ImagePicker.swift */,
 				444AC83C28C23DF2004B48B1 /* CustomBackButton.swift */,
+				4442350828E47FCD00FAF292 /* Fancy3DotsIndexView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -417,6 +448,8 @@
 				447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */,
 				441F6EFB28E30C1200A85DBC /* SignUpUseCase.swift in Sources */,
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,
+				4442350928E47FCD00FAF292 /* Fancy3DotsIndexView.swift in Sources */,
+				4442351328E4B09A00FAF292 /* TwoNavigationLink.swift in Sources */,
 				447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */,
 				447F33A228D9C312004D7517 /* QuickView.swift in Sources */,
 				441F6F0428E30DE200A85DBC /* ApiClient.swift in Sources */,
@@ -429,6 +462,7 @@
 				447B467928B10635005C7291 /* SignUpView.swift in Sources */,
 				441F6EFD28E30C2E00A85DBC /* SignInUseCase.swift in Sources */,
 				441F6F0828E3126400A85DBC /* RemoteService.swift in Sources */,
+				4442351128E4AC6400FAF292 /* RegistrationTextFields.swift in Sources */,
 				4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */,
 				447B467528AFF5E2005C7291 /* SignInView.swift in Sources */,
 				44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */,
@@ -438,10 +472,12 @@
 				444AC83D28C23DF2004B48B1 /* CustomBackButton.swift in Sources */,
 				4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */,
 				4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */,
+				4442350F28E4A9CD00FAF292 /* WelcomLabels.swift in Sources */,
 				4449A01A28D0C432001720DD /* TokenModel.swift in Sources */,
 				441F6F0628E30FE600A85DBC /* ApiService.swift in Sources */,
 				441F6F0128E30CB600A85DBC /* SignOutUseCase.swift in Sources */,
 				447F33A428D9C322004D7517 /* TodayView.swift in Sources */,
+				4442350C28E48EC600FAF292 /* OnboardView.swift in Sources */,
 				4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,29 +14,29 @@ struct SignInView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-            
             VStack(spacing: 0) {
-                
-                VStack(alignment: .leading) {
-                    Text("Welcome")
-                        .padding(.init(top: 94, leading: 0, bottom: 0, trailing: 224))
-                        .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
-                        .foregroundColor(FontStyleColors.colorThin)
-                    
-                    
-                    Text("Sign up to continue")
-                        .padding(.init(top: 12, leading: 0, bottom: 0, trailing: 213))
-                        .font(.custom(FontsStyleManager.Roboto.thin, size: 16))
-                        .foregroundColor(FontStyleColors.colorMedium)
-                }
-                
+//                VStack(alignment: .leading, spacing: 12) {
+//                    Text("Welcome back")
+//                        //.padding(.init(top: 94, leading: 0, bottom: 0, trailing: 145))
+//                        .font(.custom(FontsStyleManager.Roboto.thin, size: 32))
+//                        .foregroundColor(FontStyleColors.colorThin)
+//
+//
+//                    Text("Sign up to continue")
+//                        //.padding(.init(top: 12, leading: 0, bottom: 0, trailing: 213))
+//                        .font(.custom(FontsStyleManager.Roboto.thin, size: 16))
+//                        .foregroundColor(FontStyleColors.colorMedium)
+//                }
+//                .padding(.init(top: 94, leading: 24, bottom: 0, trailing: 140))
+                WelcomLabels(title: "Welcome back", subTitle: "Sign up to continue",
+                             top: 60, leading: 24, bottom: 0, trailing: 141)
                 VStack(alignment: .leading) {
                     Text("Username")
                     
                     TextField("Enter your email", text: $emailTextField)
                         .keyboardType(.emailAddress)
                     Rectangle()
-                        .frame(width: 326, height: 3)
+                        .frame(width: 326, height: 1)
                         .foregroundColor(.gray)
                 }
                 .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
@@ -45,7 +45,7 @@ struct SignInView: View {
                     Text("Password")
                     SecureField("Enter your password", text: $passwordTextField)
                     Rectangle()
-                        .frame(width: 326, height: 3)
+                        .frame(width: 326, height: 1)
                         .foregroundColor(.gray)
                 }
                 .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))

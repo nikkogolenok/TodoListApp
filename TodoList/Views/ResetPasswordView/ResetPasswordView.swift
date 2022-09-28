@@ -17,11 +17,11 @@ struct ResetPasswordView: View {
         VStack(alignment: .leading, spacing: 50) {
             VStack(alignment: .leading, spacing: 12) {
                 Text("Reset Password")
-                    .frame(width: 236, height: 41)
+                    .padding(.init(top: 34, leading: 0, bottom: 0, trailing: 115))
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 30))
                     .foregroundColor(FontStyleColors.colorThin)
                 Text("Reset code was sent to your email. Please enter the code and create new password")
-                    .frame(width: 340, height: 38)
+                    .padding(.init(top: 12, leading: 0, bottom: 0, trailing: 10))
                     .font(.custom(FontsStyleManager.Roboto.medium, size: 16))
                     .foregroundColor(FontStyleColors.colorMedium)
                     .multilineTextAlignment(.leading)

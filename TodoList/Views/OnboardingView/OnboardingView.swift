@@ -25,7 +25,7 @@ struct OnboardingView: View {
                     description: "Task and assign them to colleagues.")
     ]
     
-    
+    // MARK: - Body
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -37,7 +37,6 @@ struct OnboardingView: View {
                 }
                 .tabViewStyle(PageTabViewStyle())
                 .indexViewStyle(.page(backgroundDisplayMode: .never))
-                .ignoresSafeArea(.container, edges: .all)
                 .overlay(Fancy3DotsIndexView(numberOfPages: screens.count, currentIndex: currentIndex))
                 
                 ZStack {
@@ -77,75 +76,14 @@ struct OnboardingView: View {
                     .padding(.init(top: 31, leading: 0, bottom: 0, trailing: 0))
                 }
             }
+            .offset(y: 0)
         }
     }
 }
-
-struct OnboardView: View {
-    
-    // MARK: - Variables
-    @State private var navigate = false
-    
-    let imageName: String
-    let title: String
-    let description: String
-    
-    // MARK: - Body
-    var body: some View {
-        VStack(spacing: 0) {
-            Image(imageName)
-                .frame(width: 305, height: 252)
-                .padding(.init(top: 108, leading: 35, bottom: 0, trailing: 35))
-                .ignoresSafeArea()
-            Spacer()
-            Text(title)
-                .font(.custom(FontsStyleManager.Roboto.thin, size: 24))
-                .foregroundColor(FontStyleColors.colorThin)
-                .padding(.init(top: 0, leading: 0, bottom: 11, trailing: 0))
-            
-            Text(description)
-                .font(.custom(FontsStyleManager.Roboto.thin, size: 19))
-                .foregroundColor(FontStyleColors.colorMedium)
-                .opacity(0.8)
-            Spacer()
-        }
-        .offset(y: -50)
-    }
-}
-
-
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
             .previewInterfaceOrientation(.portraitUpsideDown)
-    }
-}
-
-struct Fancy3DotsIndexView: View {
-    
-    // MARK: - Variables
-    let numberOfPages: Int
-    let currentIndex: Int
-    
-    private let circleSize:    CGFloat = 8
-    private let circleSpacing: CGFloat = 8
-    
-    private let primaryColor = Color.black
-    private let secondaryColor = Color.black.opacity(0.2)
-    
-    // MARK: - Body
-    var body: some View {
-        HStack(spacing: circleSpacing) {
-            ForEach(0..<numberOfPages, id: \.self) { index in
-                Circle()
-                    .fill(currentIndex == index ? primaryColor : secondaryColor)
-                    .scaleEffect(1)
-                    .frame(width: circleSize, height: circleSize)
-                    .id(index)
-            }
-        }
-        .offset(y: -50)
-        .padding(.init(top: 450, leading: 0, bottom: 0, trailing: 0))
     }
 }
