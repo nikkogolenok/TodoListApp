@@ -30,25 +30,31 @@ struct SignInView: View {
 //                .padding(.init(top: 94, leading: 24, bottom: 0, trailing: 140))
                 WelcomLabels(title: "Welcome back", subTitle: "Sign up to continue",
                              top: 60, leading: 24, bottom: 0, trailing: 141)
-                VStack(alignment: .leading) {
-                    Text("Username")
-                    
-                    TextField("Enter your email", text: $emailTextField)
-                        .keyboardType(.emailAddress)
-                    Rectangle()
-                        .frame(width: 326, height: 1)
-                        .foregroundColor(.gray)
-                }
-                .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
+//                VStack(alignment: .leading) {
+//                    Text("Username")
+//
+//                    TextField("Enter your email", text: $emailTextField)
+//                        .keyboardType(.emailAddress)
+//                    Rectangle()
+//                        .frame(width: 326, height: 1)
+//                        .foregroundColor(.gray)
+//                }
+//                .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
+//
+//                VStack(alignment: .leading) {
+//                    Text("Password")
+//                    SecureField("Enter your password", text: $passwordTextField)
+//                    Rectangle()
+//                        .frame(width: 326, height: 1)
+//                        .foregroundColor(.gray)
+//                }
+//                .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
                 
-                VStack(alignment: .leading) {
-                    Text("Password")
-                    SecureField("Enter your password", text: $passwordTextField)
-                    Rectangle()
-                        .frame(width: 326, height: 1)
-                        .foregroundColor(.gray)
-                }
-                .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
+                RegistrationTextFields(titleUser: "Username",
+                                       textFieldUser: "Enter your email",
+                                       titlePassword: "Password",
+                                       textFieldPassword: "Enter your password",
+                                       top: 26, leading: 24, bottom: 17, trailing: 0)
                 
                 NavigationLink(destination: ForgotPasswordView(), label: {
                     Text("Forgot password")
@@ -59,23 +65,28 @@ struct SignInView: View {
                 .padding(.top, 12)
                 .padding(.leading, 190)
                 
-                VStack(alignment: .center, spacing: 118) {
-                    Button("Sign Up") {
-                        print("SignUp")
-                    }
-                    .frame(width: 327, height: 48)
-                    .background(FontStyleColors.colorRed)
-                    .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                    .foregroundColor(FontStyleColors.colorThin)
-                    
-                    Button("Sign In") {
-                        print("SignIn")
-                    }
-                    .frame(width: 60, height: 21)
-                    .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                    .foregroundColor(FontStyleColors.colorThin)
-                }
-                .padding(.top, 72)
+//                VStack(alignment: .center, spacing: 118) {
+//                    Button("Sign Up") {
+//                        print("SignUp")
+//                    }
+//                    .frame(width: 327, height: 48)
+//                    .background(FontStyleColors.colorRed)
+//                    .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
+//                    .foregroundColor(FontStyleColors.colorThin)
+//
+//                    Button("Sign In") {
+//                        print("SignIn")
+//                    }
+//                    .frame(width: 60, height: 21)
+//                    .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
+//                    .foregroundColor(FontStyleColors.colorThin)
+//                }
+//                .padding(.top, 72)
+                
+                TwoNavigationLink(titleLinkOne: "Sign Up",
+                                  titleLinkTwo: "Sign In",
+                                  spacing: 118,
+                                  top: 72, leading: 0, bottom: 0, trailing: 0)
             }
             .offset(y: -50)
             .navigationBarBackButtonHidden(true)

@@ -13,13 +13,14 @@ struct TwoNavigationLink: View {
     let titleLinkOne: String
     let titleLinkTwo: String
     
+    let spacing : CGFloat
     let top: CGFloat
     let leading: CGFloat
     let bottom: CGFloat
     let trailing: CGFloat
     
     var body: some View {
-        VStack(alignment: .center, spacing: 51) {
+        VStack(alignment: .center, spacing: spacing) {
             NavigationLink(titleLinkOne) {
                 SignInView()
             }

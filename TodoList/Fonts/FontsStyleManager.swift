@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FontsStyleManager {
     struct Roboto {
-        static let thin        = "Roboto-ThinItalic"
-        static let medium      = "Roboto-Medium"
+        static let thin   = "Roboto-ThinItalic"
+        static let medium = "Roboto-Medium"
     }
 }

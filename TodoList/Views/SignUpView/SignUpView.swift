@@ -53,6 +53,7 @@ struct SignUpView: View {
             TwoNavigationLink(viewRouter: viewRouter,
                               titleLinkOne: "Sign Up",
                               titleLinkTwo: "Sign In",
+                              spacing: 51,
                               top: 72, leading: 0, bottom: 0, trailing: 0)
         }
         .offset(y: -40)

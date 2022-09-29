@@ -16,7 +16,6 @@ struct ProfileView: View {
             .navigationTitle("Profile")
             .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
             .foregroundColor(.white)
-
     }
 }
 
