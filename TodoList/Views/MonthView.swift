@@ -1,20 +1,19 @@
 //
-//  TaskView.swift
+//  TodayView.swift
 //  TodoList
 //
-//  Created by Никита Коголенок on 5.10.22.
+//  Created by Никита Коголенок on 30.09.22.
 //
 
 import SwiftUI
 
-struct TaskView: View {
+struct MonthView: View {
     
     // MARK: - Variables
     @State var currentButton: Bool = true
     @State var filterButton:  Bool = false
     @StateObject var viewModel = TaskViewModel()
     
-    // MARK: - Body
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             
@@ -41,9 +40,6 @@ struct TaskView: View {
         .ignoresSafeArea(.container, edges: .top)
     }
     
-    // MARK: - Methods
-    
-    // MARK: Section
     func sectionView() -> some View {
         // MARK: Current Week View
 //        ScrollView(.horizontal, showsIndicators: false) {
@@ -68,7 +64,7 @@ struct TaskView: View {
                             .frame(width: 8, height: 8)
                             .opacity(viewModel.isToday(date: day) ? 1 : 0)
                     }
-                    //.foregroundStyle(viewModel.isToday(date: day) ? .gray : .white)
+                    
                     .foregroundColor(viewModel.isToday(date: day) ? .gray : .black)
                     // MARK: Capsule Shape
                     .frame(width: 45, height: 90)
@@ -107,10 +103,10 @@ struct TaskView: View {
                     .padding(.top, 25)
 
                     HStack {
-                        Text("Today")
-//                        NavigationLink("Today") {
-//                            TodayView()
-//                        }
+//                        Text("Today")
+                        NavigationLink("Today") {
+                            MonthView()
+                        }
                             .padding(.trailing, 120)
                             .foregroundColor(Color(white: 1, opacity: currentButton ? 1 : 0.5))
 
@@ -121,7 +117,7 @@ struct TaskView: View {
                             }
 
                         Text("Month")
-                            .foregroundColor(Color(white: 1, opacity: currentButton ? 0.5 : 1))
+                            .foregroundColor(Color(white: 1, opacity: currentButton ? 1 : 0.5))
 
                             .onTapGesture {
                                 if self.currentButton {
@@ -180,36 +176,8 @@ struct TaskView: View {
     }
 }
 
-struct TaskView_Previews: PreviewProvider {
+struct TodayView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView()
+        MonthView()
     }
 }
-
-// MARK: - UI Design Helper functions
-extension View {
-    
-    func hLeading() -> some View {
-        self
-            .frame(maxWidth: .infinity, alignment: .leading)
-    }
-    
-    func hTrailing() -> some View {
-        self
-            .frame(maxWidth: .infinity, alignment: .trailing)
-    }
-
-    func hCenter() -> some View {
-        self
-            .frame(maxWidth: .infinity, alignment: .center)
-    }
-    
-    func getSafeArea() -> UIEdgeInsets {
-        guard let screen = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return .zero }
-        
-        guard let safeArea = screen.windows.first?.safeAreaInsets else { return .zero}
-        
-        return safeArea
-    }
-}
-

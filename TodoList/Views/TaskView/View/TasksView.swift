@@ -12,6 +12,7 @@ struct TasksView: View {
     // MARK: - Variables
     @Binding var task: TaskModel
     @Binding var tasks: [TaskModel]
+    @StateObject var viewModel = TaskViewModel()
     
     // MARK: - Body
     var body: some View {

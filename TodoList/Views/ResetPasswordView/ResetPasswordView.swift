@@ -31,7 +31,7 @@ struct ResetPasswordView: View {
                 Text("Reset code")
                 TextField("Enter your number", text: $emailTextField)
                 Rectangle()
-                    .frame(width: 326, height: 3)
+                    .frame(width: 326, height: 1)
                     .foregroundColor(.gray)
             }
             
@@ -39,7 +39,7 @@ struct ResetPasswordView: View {
                 Text("New password")
                 TextField("Enter your password", text: $emailTextField)
                 Rectangle()
-                    .frame(width: 326, height: 3)
+                    .frame(width: 326, height: 1)
                     .foregroundColor(.gray)
             }
             
@@ -47,7 +47,7 @@ struct ResetPasswordView: View {
                 Text("Confirm password")
                 TextField("Enter your confirm password", text: $emailTextField)
                 Rectangle()
-                    .frame(width: 326, height: 3)
+                    .frame(width: 326, height: 1)
                     .foregroundColor(.gray)
             }
             
@@ -62,6 +62,7 @@ struct ResetPasswordView: View {
         }
         .padding(.top, 0)
         .padding(.leading, 24)
+        .offset(y: -50)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarLeading) {

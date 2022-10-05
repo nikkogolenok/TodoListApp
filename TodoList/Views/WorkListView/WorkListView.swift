@@ -85,6 +85,7 @@ struct WorkListView: View {
                         })
             }
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 struct WorkListView_Previews: PreviewProvider {

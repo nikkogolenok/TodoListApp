@@ -31,7 +31,7 @@ struct ForgotPasswordView: View {
                 TextField("Enter your email", text: $emailTextField)
                     .keyboardType(.emailAddress)
                 Rectangle()
-                    .frame(width: 326, height: 3)
+                    .frame(width: 326, height: 1)
                     .foregroundColor(.gray)
             }
             
@@ -46,7 +46,7 @@ struct ForgotPasswordView: View {
         }
         .padding(.top, 0)
         .padding(.leading, 24)
-        .offset(y: -100)
+        .offset(y: -150)
         .navigationBarBackButtonHidden(true)
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarLeading) {
