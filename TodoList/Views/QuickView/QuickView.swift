@@ -14,7 +14,6 @@ struct QuickView: View {
     var body: some View {
 //        Text("Quick")
         tasksView()
-            .background(Color.red)
         
             .offset(y: 20)
             .navigationBarBackButtonHidden(true)

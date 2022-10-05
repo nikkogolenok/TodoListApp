@@ -45,7 +45,6 @@ struct ProfileView: View {
             .padding(.top, 24)
             .frame(width: 343, height: 190)
             .cornerRadius(5)
-            .background(.red)
             
             HStack {
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -62,7 +61,6 @@ struct ProfileView: View {
                 }
             }
             .frame(width: 343, height: 100)
-            .background(.yellow)
             
             VStack {
                 Text("Statistic")
@@ -106,7 +104,6 @@ struct ProfileView: View {
             }
             .frame(width: 343, height: 205)
             .cornerRadius(5)
-            .background(.green)
         }
         .padding(.top, 10)
         .offset(y: 20)
