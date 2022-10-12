@@ -40,6 +40,9 @@
 		447F33A228D9C312004D7517 /* QuickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F33A128D9C312004D7517 /* QuickView.swift */; };
 		447F33AA28D9C344004D7517 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F33A928D9C344004D7517 /* MenuView.swift */; };
 		447F33AC28D9C34E004D7517 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F33AB28D9C34E004D7517 /* ProfileView.swift */; };
+		4485733928F4156600BED641 /* TaskFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485733828F4156600BED641 /* TaskFullView.swift */; };
+		4485733B28F5C48B00BED641 /* ShadowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485733A28F5C48B00BED641 /* ShadowText.swift */; };
+		4485733D28F5CA0500BED641 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485733C28F5CA0500BED641 /* TabBarView.swift */; };
 		4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486D8CF28CF579C001343D7 /* FontStyleColors.swift */; };
 		4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488230128BCE7EF0026962C /* SplashScreenView.swift */; };
 		448DB91428E9BCD2003E33F0 /* AddProjectAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DB91328E9BCD2003E33F0 /* AddProjectAlert.swift */; };
@@ -52,7 +55,14 @@
 		449DA7E028EC71B400736BDD /* ChooseColorSquares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DA7DF28EC71B400736BDD /* ChooseColorSquares.swift */; };
 		449DA7E228EC882900736BDD /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DA7E128EC882800736BDD /* ProjectCell.swift */; };
 		449DA7E428EDB8EA00736BDD /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DA7E328EDB8EA00736BDD /* TaskView.swift */; };
+		449DA7E728EE323C00736BDD /* CreateCheckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DA7E628EE323A00736BDD /* CreateCheckListView.swift */; };
+		449DA7EA28EE35B900736BDD /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DA7E928EE35B900736BDD /* CreateNoteView.swift */; };
+		449DA7F228EEFE1600736BDD /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449DA7F128EEFE1600736BDD /* CreateTaskView.swift */; };
 		44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3201B28C8B6BD0085480E /* ImagePicker.swift */; };
+		44E0D74628F026E400F618A8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0D74528F026E400F618A8 /* CalendarView.swift */; };
+		44E0D74A28F0319300F618A8 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0D74928F0319300F618A8 /* CustomDatePicker.swift */; };
+		44E0D74C28F037EE00F618A8 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0D74B28F037EE00F618A8 /* DateValue.swift */; };
+		44E0D74F28F0635C00F618A8 /* CalendarWonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0D74E28F0635C00F618A8 /* CalendarWonthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +102,9 @@
 		447F33A128D9C312004D7517 /* QuickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickView.swift; sourceTree = "<group>"; };
 		447F33A928D9C344004D7517 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		447F33AB28D9C34E004D7517 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4485733828F4156600BED641 /* TaskFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFullView.swift; sourceTree = "<group>"; };
+		4485733A28F5C48B00BED641 /* ShadowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowText.swift; sourceTree = "<group>"; };
+		4485733C28F5CA0500BED641 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		4486D8CF28CF579C001343D7 /* FontStyleColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyleColors.swift; sourceTree = "<group>"; };
 		4488230128BCE7EF0026962C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		448DB91328E9BCD2003E33F0 /* AddProjectAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectAlert.swift; sourceTree = "<group>"; };
@@ -104,7 +117,14 @@
 		449DA7DF28EC71B400736BDD /* ChooseColorSquares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorSquares.swift; sourceTree = "<group>"; };
 		449DA7E128EC882800736BDD /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		449DA7E328EDB8EA00736BDD /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		449DA7E628EE323A00736BDD /* CreateCheckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCheckListView.swift; sourceTree = "<group>"; };
+		449DA7E928EE35B900736BDD /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
+		449DA7F128EEFE1600736BDD /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
 		44B3201B28C8B6BD0085480E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		44E0D74528F026E400F618A8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		44E0D74928F0319300F618A8 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		44E0D74B28F037EE00F618A8 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		44E0D74E28F0635C00F618A8 /* CalendarWonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarWonthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +223,7 @@
 				4428B62128D32B6B004EE93E /* WorkListView.swift */,
 				4428B62628D32CF4004EE93E /* TabBarIcon.swift */,
 				4428B62328D32BF3004EE93E /* ViewRouter.swift */,
+				4485733C28F5CA0500BED641 /* TabBarView.swift */,
 			);
 			path = WorkListView;
 			sourceTree = "<group>";
@@ -277,6 +298,14 @@
 			path = ProfileView;
 			sourceTree = "<group>";
 		};
+		4485733728F4149D00BED641 /* TaskFullView */ = {
+			isa = PBXGroup;
+			children = (
+				4485733828F4156600BED641 /* TaskFullView.swift */,
+			);
+			path = TaskFullView;
+			sourceTree = "<group>";
+		};
 		4486D8C528CF34C2001343D7 /* OnboardingView */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +358,12 @@
 		4486D8CB28CF37FC001343D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4485733728F4149D00BED641 /* TaskFullView */,
+				44E0D74D28F0633900F618A8 /* CalendarWonthView */,
+				44E0D74428F026CE00F618A8 /* CalendarView */,
+				449DA7F028EEFE0000736BDD /* CreateTaskView */,
+				449DA7E828EE35A600736BDD /* CreateNoteView */,
+				449DA7E528EE321F00736BDD /* CreateCheckListView */,
 				4498DF4228E58F7D002F86F3 /* AlertViews */,
 				4442350D28E4A96100FAF292 /* ViewModel */,
 				4486D8CD28CF38EC001343D7 /* TodoListApp */,
@@ -346,6 +381,7 @@
 				447F33A028D9C2F6004D7517 /* ProfileView */,
 				4486D8CE28CF5729001343D7 /* CustomView */,
 				4436508A28E70FB6008FFBCF /* MonthView.swift */,
+				4485733A28F5C48B00BED641 /* ShadowText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -445,6 +481,64 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		449DA7E528EE321F00736BDD /* CreateCheckListView */ = {
+			isa = PBXGroup;
+			children = (
+				449DA7E628EE323A00736BDD /* CreateCheckListView.swift */,
+			);
+			path = CreateCheckListView;
+			sourceTree = "<group>";
+		};
+		449DA7E828EE35A600736BDD /* CreateNoteView */ = {
+			isa = PBXGroup;
+			children = (
+				449DA7E928EE35B900736BDD /* CreateNoteView.swift */,
+			);
+			path = CreateNoteView;
+			sourceTree = "<group>";
+		};
+		449DA7F028EEFE0000736BDD /* CreateTaskView */ = {
+			isa = PBXGroup;
+			children = (
+				449DA7F128EEFE1600736BDD /* CreateTaskView.swift */,
+			);
+			path = CreateTaskView;
+			sourceTree = "<group>";
+		};
+		44E0D74428F026CE00F618A8 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				44E0D74828F030BF00F618A8 /* Model */,
+				44E0D74728F030AC00F618A8 /* View */,
+			);
+			path = CalendarView;
+			sourceTree = "<group>";
+		};
+		44E0D74728F030AC00F618A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44E0D74528F026E400F618A8 /* CalendarView.swift */,
+				44E0D74928F0319300F618A8 /* CustomDatePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44E0D74828F030BF00F618A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44E0D74B28F037EE00F618A8 /* DateValue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44E0D74D28F0633900F618A8 /* CalendarWonthView */ = {
+			isa = PBXGroup;
+			children = (
+				44E0D74E28F0635C00F618A8 /* CalendarWonthView.swift */,
+			);
+			path = CalendarWonthView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -517,6 +611,7 @@
 			files = (
 				447F33AA28D9C344004D7517 /* MenuView.swift in Sources */,
 				4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */,
+				44E0D74628F026E400F618A8 /* CalendarView.swift in Sources */,
 				447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */,
 				441F6EFB28E30C1200A85DBC /* SignUpUseCase.swift in Sources */,
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,
@@ -526,19 +621,26 @@
 				447F33A228D9C312004D7517 /* QuickView.swift in Sources */,
 				441F6F0428E30DE200A85DBC /* ApiClient.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
+				449DA7E728EE323C00736BDD /* CreateCheckListView.swift in Sources */,
 				441F6EFF28E30C9E00A85DBC /* RefreshTokenUseCase.swift in Sources */,
 				449DA7DE28EC70B300736BDD /* TickImage.swift in Sources */,
 				4498DF5328E5CECD002F86F3 /* AlertPlusButton.swift in Sources */,
+				449DA7F228EEFE1600736BDD /* CreateTaskView.swift in Sources */,
 				4498DF5728E5D931002F86F3 /* AlertFilterView.swift in Sources */,
 				449DA7E028EC71B400736BDD /* ChooseColorSquares.swift in Sources */,
+				44E0D74C28F037EE00F618A8 /* DateValue.swift in Sources */,
 				4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */,
 				4449A01528D0BC64001720DD /* UserModel.swift in Sources */,
 				4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */,
 				447B467928B10635005C7291 /* SignUpView.swift in Sources */,
+				4485733B28F5C48B00BED641 /* ShadowText.swift in Sources */,
 				441F6EFD28E30C2E00A85DBC /* SignInUseCase.swift in Sources */,
+				449DA7EA28EE35B900736BDD /* CreateNoteView.swift in Sources */,
 				441F6F0828E3126400A85DBC /* RemoteService.swift in Sources */,
+				4485733D28F5CA0500BED641 /* TabBarView.swift in Sources */,
 				449DA7E228EC882900736BDD /* ProjectCell.swift in Sources */,
 				4442351128E4AC6400FAF292 /* RegistrationTextFields.swift in Sources */,
+				44E0D74F28F0635C00F618A8 /* CalendarWonthView.swift in Sources */,
 				4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */,
 				447B467528AFF5E2005C7291 /* SignInView.swift in Sources */,
 				44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */,
@@ -551,9 +653,11 @@
 				4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */,
 				4498DF4D28E5B360002F86F3 /* TaskModel.swift in Sources */,
 				4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */,
+				44E0D74A28F0319300F618A8 /* CustomDatePicker.swift in Sources */,
 				4442350F28E4A9CD00FAF292 /* WelcomLabels.swift in Sources */,
 				4449A01A28D0C432001720DD /* TokenModel.swift in Sources */,
 				441F6F0628E30FE600A85DBC /* ApiService.swift in Sources */,
+				4485733928F4156600BED641 /* TaskFullView.swift in Sources */,
 				441F6F0128E30CB600A85DBC /* SignOutUseCase.swift in Sources */,
 				4442350C28E48EC600FAF292 /* OnboardView.swift in Sources */,
 				448DB91428E9BCD2003E33F0 /* AddProjectAlert.swift in Sources */,
@@ -695,8 +799,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -724,8 +828,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

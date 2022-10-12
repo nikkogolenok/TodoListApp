@@ -53,9 +53,9 @@ class TaskViewModel: ObservableObject {
     // MARK: Checking if curent Date is Today
     func isToday(date: Date) -> Bool {
         
-        let calender = Calendar.current
+        let calendar = Calendar.current
         
-        return calender.isDate(currentDay, inSameDayAs: date)
+        return calendar.isDate(currentDay, inSameDayAs: date)
     }
 }
 

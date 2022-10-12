@@ -13,6 +13,10 @@ struct AlertFilterView: View {
     @State var incompleteButton: Bool = false
     @State var completedButton: Bool = false
     @State var allButton: Bool = false
+    
+    var firstText: String
+    var secondText: String
+    var thirdText: String
 
     // MARK: - Body
     var body: some View {
@@ -24,17 +28,14 @@ struct AlertFilterView: View {
                     completedButton = false
                     allButton = false
                 }) {
-                    Text("Incomplete Tasks")
+                    Text(firstText)
                         .frame(alignment: .leading)
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                         .foregroundColor(.black)
                 }
                 .padding(.trailing, 54)
                 if incompleteButton {
-                    Image(systemName: "chevron.down")
-                        .resizable()
-                        .foregroundColor(FontStyleColors.colorGreen)
-                        .frame(width: 16, height: 12)
+                    chevronImage()
                 }
             }
             
@@ -44,17 +45,14 @@ struct AlertFilterView: View {
                     incompleteButton = false
                     allButton = false
                 }) {
-                    Text("Completed Tasks")
+                    Text(secondText)
                         .frame(alignment: .leading)
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                         .foregroundColor(.black)
                 }
                 .padding(.trailing, 54)
                 if completedButton {
-                    Image(systemName: "chevron.down")
-                        .resizable()
-                        .foregroundColor(FontStyleColors.colorGreen)
-                        .frame(width: 16, height: 12)
+                    chevronImage()
                 }
             }
             
@@ -64,17 +62,14 @@ struct AlertFilterView: View {
                     completedButton = false
                     incompleteButton = false
                 }) {
-                    Text("All Tasks")
+                    Text(thirdText)
                         .frame(alignment: .leading)
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                         .foregroundColor(.black)
                 }
                 .padding(.trailing, 117)
                 if allButton {
-                    Image(systemName: "chevron.down")
-                        .resizable()
-                        .foregroundColor(FontStyleColors.colorGreen)
-                        .frame(width: 16, height: 12)
+                    chevronImage()
                 }
             }
         }
@@ -82,10 +77,17 @@ struct AlertFilterView: View {
         .cornerRadius(5)
         .background(Color.white)
     }
+    
+    func chevronImage() -> some View {
+        Image(systemName: "chevron.down")
+            .resizable()
+            .foregroundColor(FontStyleColors.colorGreen)
+            .frame(width: 16, height: 12)
+    }
 }
 
 struct AlertFilterView_Previews: PreviewProvider {
     static var previews: some View {
-        AlertFilterView()
+        AlertFilterView(firstText: "Incomplete Tasks", secondText: "Completed Tasks", thirdText: "All Tasks")
     }
 }

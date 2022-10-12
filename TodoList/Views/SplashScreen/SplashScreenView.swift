@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct SplashScreenView: View {
     
     // MARK: - Variables
@@ -46,6 +47,7 @@ struct SplashScreenView: View {
     }
 }
 
+@available(iOS 16.0, *)
 struct SplashScreenView_Previews: PreviewProvider {
     static var previews: some View {
         SplashScreenView()

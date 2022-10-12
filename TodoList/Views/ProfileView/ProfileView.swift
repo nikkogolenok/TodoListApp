@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @State private var image = UIImage()
+    @State private var showSheet = false
+    
     var body: some View {
         VStack(spacing: 24) {
             VStack {
@@ -15,11 +19,22 @@ struct ProfileView: View {
                 Image(systemName: "gearshape.fill")
                     .padding(.leading, 310)
                     .padding(.top, 10)
-                    
                 
                 HStack(spacing: 10) {
-                    Circle()
+                    Image(uiImage: self.image)
+                        .resizable()
                         .frame(width: 64, height: 64)
+                        .cornerRadius(32)
+                        .background(FontStyleColors.colorGray)
+                        .aspectRatio(contentMode: .fill)
+                        .clipShape(Circle())
+                        .padding(.init(top: 28, leading: 0, bottom: 0, trailing: 0))
+                        .onTapGesture {
+                            showSheet = true
+                        }
+                        .sheet(isPresented: $showSheet) {
+                            ImagePicker(sourseType: .photoLibrary, selectedImage: self.$image)
+                        }
                     
                     VStack(alignment: .leading) {
                         Text("Stephen")

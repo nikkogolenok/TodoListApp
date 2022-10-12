@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct SignInView: View {
     
     @State private var emailTextField = ""
@@ -100,6 +101,7 @@ struct SignInView: View {
     }
 }
 
+@available(iOS 16.0, *)
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView()

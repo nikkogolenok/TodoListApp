@@ -135,7 +135,8 @@ struct MonthView: View {
 
             if filterButton {
                 GeometryReader { _ in
-                    AlertFilterView()
+                    AlertFilterView(firstText: "Incomplete Tasks", secondText: "Completd Tasks", thirdText: "All Tasks")
+                    
                         .cornerRadius(5)
                         .padding(.leading,145)
                         .padding(.top, 30)

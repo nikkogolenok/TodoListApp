@@ -1,14 +1,13 @@
 //
-//  WorkListView.swift
+//  TabBarView.swift
 //  TodoList
 //
-//  Created by Никита Коголенок on 15.09.22.
+//  Created by Никита Коголенок on 11.10.22.
 //
 
 import SwiftUI
 
-@available(iOS 16.0, *)
-struct WorkListView: View {
+struct TabBarView: View {
     
     // MARK: - Variables
     @StateObject var viewRouter: ViewRouter
@@ -20,18 +19,18 @@ struct WorkListView: View {
             GeometryReader { geometry in
                 VStack {
                     Spacer()
-                    switch viewRouter.currentPage {
-                    case .myTask:
-                        TaskView()
-                    case .menu:
-                        MenuView()
-                    case .quick:
-                        QuickView()
-                    case .profile:
-                        ProfileView()
-                    }
+//                    switch viewRouter.currentPage {
+//                    case .myTask:
+//                        TaskView()
+//                    case .menu:
+//                        MenuView()
+//                    case .quick:
+//                        QuickView()
+//                    case .profile:
+//                        ProfileView()
+//                    }
                     
-                    Spacer()
+                    
                     ZStack {
                         HStack {
                             
@@ -70,27 +69,13 @@ struct WorkListView: View {
                 }
             }
             
-            if showCreatMenu {
-                GeometryReader { _ in
-                    AlertPlusButton(viewRouter: ViewRouter())
-                        .cornerRadius(5)
-                        .padding(.horizontal, 50)
-                        .padding(.top, 335)
-                }
-                .background(
-                    Color.black.opacity(0.5)
-                        .onTapGesture {
-                            self.showCreatMenu.toggle()
-                        })
-            }
         }
-        .edgesIgnoringSafeArea(.top)
+//        .edgesIgnoringSafeArea(.top)
     }
 }
 
-@available(iOS 16.0, *)
-struct WorkListView_Previews: PreviewProvider {
+struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkListView(viewRouter: ViewRouter())
+        TabBarView(viewRouter: ViewRouter())
     }
 }

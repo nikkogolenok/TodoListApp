@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct SignUpView: View {
     
     // MARK: - Variables
@@ -68,6 +69,7 @@ struct SignUpView: View {
     }
 }
 
+@available(iOS 16.0, *)
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpView()

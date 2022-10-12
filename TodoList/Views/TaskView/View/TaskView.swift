@@ -12,6 +12,7 @@ struct TaskView: View {
     // MARK: - Variables
     @State var currentButton: Bool = true
     @State var filterButton:  Bool = false
+    @State var chachImage: Bool = false
     @StateObject var viewModel = TaskViewModel()
     
     // MARK: - Body
@@ -25,12 +26,18 @@ struct TaskView: View {
                         HStack(spacing: 2) {
                             let day = viewModel.currentDay
                             Text(viewModel.extractDate(date: day, format: "MMMM YYYY"))
-                            Image(systemName: "chevron.down")
+                            Image(systemName: chachImage ? "chevron.up" : "chevron.down")
                         }
                         .onTapGesture {
-                            print("123")
+                            if !chachImage {
+                                self.chachImage.toggle()
+                            }
                         }
                         sectionView()
+                        
+                        if chachImage {
+                           CalendarWonthView()
+                        }
                         tasksView()
                     }
                 } header: {
@@ -139,9 +146,9 @@ struct TaskView: View {
 
             if filterButton {
                 GeometryReader { _ in
-                    AlertFilterView()
+                    AlertFilterView(firstText: "Incomplete Tasks", secondText: "Completd Tasks", thirdText: "All Tasks")
                         .cornerRadius(5)
-                        .padding(.leading,145)
+                        .padding(.leading, 120)
                         .padding(.top, 30)
                 }
                 .background(

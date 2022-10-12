@@ -5,8 +5,10 @@
 //  Created by Никита Коголенок on 28.09.22.
 //
 
+
 import SwiftUI
 
+@available(iOS 16.0, *)
 struct TwoNavigationLink: View {
     
     @StateObject var viewRouter = ViewRouter()
