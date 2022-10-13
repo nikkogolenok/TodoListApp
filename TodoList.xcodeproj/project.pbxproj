@@ -29,9 +29,7 @@
 		4442350F28E4A9CD00FAF292 /* WelcomLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350E28E4A9CD00FAF292 /* WelcomLabels.swift */; };
 		4442351128E4AC6400FAF292 /* RegistrationTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442351028E4AC6400FAF292 /* RegistrationTextFields.swift */; };
 		4442351328E4B09A00FAF292 /* TwoNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442351228E4B09A00FAF292 /* TwoNavigationLink.swift */; };
-		4449A01528D0BC64001720DD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01428D0BC64001720DD /* UserModel.swift */; };
 		4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01728D0BE29001720DD /* UserViewModel.swift */; };
-		4449A01A28D0C432001720DD /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01928D0C432001720DD /* TokenModel.swift */; };
 		444AC83D28C23DF2004B48B1 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444AC83C28C23DF2004B48B1 /* CustomBackButton.swift */; };
 		447B467528AFF5E2005C7291 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467428AFF5E2005C7291 /* SignInView.swift */; };
 		447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467628B0FC64005C7291 /* ForgotPasswordView.swift */; };
@@ -43,6 +41,11 @@
 		4485733928F4156600BED641 /* TaskFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485733828F4156600BED641 /* TaskFullView.swift */; };
 		4485733B28F5C48B00BED641 /* ShadowText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485733A28F5C48B00BED641 /* ShadowText.swift */; };
 		4485733D28F5CA0500BED641 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485733C28F5CA0500BED641 /* TabBarView.swift */; };
+		4485736028F8381000BED641 /* TaskAllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485735F28F8381000BED641 /* TaskAllModel.swift */; };
+		4485736328F85DD800BED641 /* SignUpUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485736228F85DD800BED641 /* SignUpUserModel.swift */; };
+		4485736528F85DF000BED641 /* SignInUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485736428F85DF000BED641 /* SignInUserModel.swift */; };
+		4485736728F85E0100BED641 /* SignOutUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485736628F85E0100BED641 /* SignOutUserModel.swift */; };
+		4485736928F85E1800BED641 /* RefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485736828F85E1800BED641 /* RefreshTokenModel.swift */; };
 		4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486D8CF28CF579C001343D7 /* FontStyleColors.swift */; };
 		4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488230128BCE7EF0026962C /* SplashScreenView.swift */; };
 		448DB91428E9BCD2003E33F0 /* AddProjectAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DB91328E9BCD2003E33F0 /* AddProjectAlert.swift */; };
@@ -91,9 +94,7 @@
 		4442350E28E4A9CD00FAF292 /* WelcomLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomLabels.swift; sourceTree = "<group>"; };
 		4442351028E4AC6400FAF292 /* RegistrationTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTextFields.swift; sourceTree = "<group>"; };
 		4442351228E4B09A00FAF292 /* TwoNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoNavigationLink.swift; sourceTree = "<group>"; };
-		4449A01428D0BC64001720DD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4449A01728D0BE29001720DD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		4449A01928D0C432001720DD /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
 		444AC83C28C23DF2004B48B1 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		447B467428AFF5E2005C7291 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		447B467628B0FC64005C7291 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -105,6 +106,11 @@
 		4485733828F4156600BED641 /* TaskFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFullView.swift; sourceTree = "<group>"; };
 		4485733A28F5C48B00BED641 /* ShadowText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowText.swift; sourceTree = "<group>"; };
 		4485733C28F5CA0500BED641 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		4485735F28F8381000BED641 /* TaskAllModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAllModel.swift; sourceTree = "<group>"; };
+		4485736228F85DD800BED641 /* SignUpUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserModel.swift; sourceTree = "<group>"; };
+		4485736428F85DF000BED641 /* SignInUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUserModel.swift; sourceTree = "<group>"; };
+		4485736628F85E0100BED641 /* SignOutUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutUserModel.swift; sourceTree = "<group>"; };
+		4485736828F85E1800BED641 /* RefreshTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
 		4486D8CF28CF579C001343D7 /* FontStyleColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyleColors.swift; sourceTree = "<group>"; };
 		4488230128BCE7EF0026962C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		448DB91328E9BCD2003E33F0 /* AddProjectAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectAlert.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		4408264A28AB7B4F0067BA33 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				4485735E28F837E600BED641 /* TaskModel */,
 				441F6EF828E30B6500A85DBC /* Webservices */,
 				4449A01628D0BE0C001720DD /* ViewModel */,
 				4449A01328D0BC47001720DD /* Model */,
@@ -201,8 +208,8 @@
 			children = (
 				441F6EFA28E30C1200A85DBC /* SignUpUseCase.swift */,
 				441F6EFC28E30C2E00A85DBC /* SignInUseCase.swift */,
-				441F6EFE28E30C9E00A85DBC /* RefreshTokenUseCase.swift */,
 				441F6F0028E30CB600A85DBC /* SignOutUseCase.swift */,
+				441F6EFE28E30C9E00A85DBC /* RefreshTokenUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -249,8 +256,10 @@
 		4449A01328D0BC47001720DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4449A01428D0BC64001720DD /* UserModel.swift */,
-				4449A01928D0C432001720DD /* TokenModel.swift */,
+				4485736228F85DD800BED641 /* SignUpUserModel.swift */,
+				4485736428F85DF000BED641 /* SignInUserModel.swift */,
+				4485736628F85E0100BED641 /* SignOutUserModel.swift */,
+				4485736828F85E1800BED641 /* RefreshTokenModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +313,14 @@
 				4485733828F4156600BED641 /* TaskFullView.swift */,
 			);
 			path = TaskFullView;
+			sourceTree = "<group>";
+		};
+		4485735E28F837E600BED641 /* TaskModel */ = {
+			isa = PBXGroup;
+			children = (
+				4485735F28F8381000BED641 /* TaskAllModel.swift */,
+			);
+			path = TaskModel;
 			sourceTree = "<group>";
 		};
 		4486D8C528CF34C2001343D7 /* OnboardingView */ = {
@@ -619,6 +636,7 @@
 				4442351328E4B09A00FAF292 /* TwoNavigationLink.swift in Sources */,
 				447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */,
 				447F33A228D9C312004D7517 /* QuickView.swift in Sources */,
+				4485736928F85E1800BED641 /* RefreshTokenModel.swift in Sources */,
 				441F6F0428E30DE200A85DBC /* ApiClient.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
 				449DA7E728EE323C00736BDD /* CreateCheckListView.swift in Sources */,
@@ -627,10 +645,10 @@
 				4498DF5328E5CECD002F86F3 /* AlertPlusButton.swift in Sources */,
 				449DA7F228EEFE1600736BDD /* CreateTaskView.swift in Sources */,
 				4498DF5728E5D931002F86F3 /* AlertFilterView.swift in Sources */,
+				4485736328F85DD800BED641 /* SignUpUserModel.swift in Sources */,
 				449DA7E028EC71B400736BDD /* ChooseColorSquares.swift in Sources */,
 				44E0D74C28F037EE00F618A8 /* DateValue.swift in Sources */,
 				4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */,
-				4449A01528D0BC64001720DD /* UserModel.swift in Sources */,
 				4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */,
 				447B467928B10635005C7291 /* SignUpView.swift in Sources */,
 				4485733B28F5C48B00BED641 /* ShadowText.swift in Sources */,
@@ -646,18 +664,20 @@
 				44B3201C28C8B6BD0085480E /* ImagePicker.swift in Sources */,
 				447F33AC28D9C34E004D7517 /* ProfileView.swift in Sources */,
 				4428B62728D32CF4004EE93E /* TabBarIcon.swift in Sources */,
+				4485736028F8381000BED641 /* TaskAllModel.swift in Sources */,
 				4498DF4F28E5B6A2002F86F3 /* TaskViewModel.swift in Sources */,
 				4498DF5128E5B70B002F86F3 /* TasksView.swift in Sources */,
 				449DA7E428EDB8EA00736BDD /* TaskView.swift in Sources */,
+				4485736528F85DF000BED641 /* SignInUserModel.swift in Sources */,
 				444AC83D28C23DF2004B48B1 /* CustomBackButton.swift in Sources */,
 				4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */,
 				4498DF4D28E5B360002F86F3 /* TaskModel.swift in Sources */,
 				4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */,
 				44E0D74A28F0319300F618A8 /* CustomDatePicker.swift in Sources */,
 				4442350F28E4A9CD00FAF292 /* WelcomLabels.swift in Sources */,
-				4449A01A28D0C432001720DD /* TokenModel.swift in Sources */,
 				441F6F0628E30FE600A85DBC /* ApiService.swift in Sources */,
 				4485733928F4156600BED641 /* TaskFullView.swift in Sources */,
+				4485736728F85E0100BED641 /* SignOutUserModel.swift in Sources */,
 				441F6F0128E30CB600A85DBC /* SignOutUseCase.swift in Sources */,
 				4442350C28E48EC600FAF292 /* OnboardView.swift in Sources */,
 				448DB91428E9BCD2003E33F0 /* AddProjectAlert.swift in Sources */,

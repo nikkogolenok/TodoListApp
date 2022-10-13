@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SignInUseCase {
+struct SignInUseCase: Codable {
     var email:    String = ""
     var password: String = ""
 }
