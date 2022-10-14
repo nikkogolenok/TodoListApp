@@ -281,7 +281,7 @@
 		447F339E28D9C2D7004D7517 /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
-				449DA7DC28EC707700736BDD /* Model */,
+				449DA7E128EC882800736BDD /* ProjectCell.swift */,
 				447F33A928D9C344004D7517 /* MenuView.swift */,
 			);
 			path = MenuView;
@@ -419,6 +419,8 @@
 				44B3201B28C8B6BD0085480E /* ImagePicker.swift */,
 				444AC83C28C23DF2004B48B1 /* CustomBackButton.swift */,
 				4442350828E47FCD00FAF292 /* Fancy3DotsIndexView.swift */,
+				449DA7DD28EC70B300736BDD /* TickImage.swift */,
+				449DA7DF28EC71B400736BDD /* ChooseColorSquares.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -480,16 +482,6 @@
 				4485736A28F951BC00BED641 /* AddProjectAlert.swift */,
 			);
 			path = AddProjectAlert;
-			sourceTree = "<group>";
-		};
-		449DA7DC28EC707700736BDD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				449DA7DD28EC70B300736BDD /* TickImage.swift */,
-				449DA7DF28EC71B400736BDD /* ChooseColorSquares.swift */,
-				449DA7E128EC882800736BDD /* ProjectCell.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		449DA7E528EE321F00736BDD /* CreateCheckListView */ = {
