@@ -2,7 +2,7 @@
 //  AddProjectAlert.swift
 //  TodoList
 //
-//  Created by Никита Коголенок on 2.10.22.
+//  Created by Никита Коголенок on 14.10.22.
 //
 
 import SwiftUI
