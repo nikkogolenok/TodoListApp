@@ -45,6 +45,8 @@
 		4485736728F85E0100BED641 /* SignOutUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485736628F85E0100BED641 /* SignOutUserModel.swift */; };
 		4485736928F85E1800BED641 /* RefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485736828F85E1800BED641 /* RefreshTokenModel.swift */; };
 		4485736B28F951BC00BED641 /* AddProjectAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485736A28F951BC00BED641 /* AddProjectAlert.swift */; };
+		4485736D28F95E7F00BED641 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485736C28F95E7F00BED641 /* CustomNavigationView.swift */; };
+		448573772900A55600BED641 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448573762900A55600BED641 /* ProjectModel.swift */; };
 		4486D8D028CF579C001343D7 /* FontStyleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4486D8CF28CF579C001343D7 /* FontStyleColors.swift */; };
 		4488230228BCE7EF0026962C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4488230128BCE7EF0026962C /* SplashScreenView.swift */; };
 		4498DF4D28E5B360002F86F3 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4498DF4C28E5B360002F86F3 /* TaskModel.swift */; };
@@ -108,6 +110,8 @@
 		4485736628F85E0100BED641 /* SignOutUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutUserModel.swift; sourceTree = "<group>"; };
 		4485736828F85E1800BED641 /* RefreshTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
 		4485736A28F951BC00BED641 /* AddProjectAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectAlert.swift; sourceTree = "<group>"; };
+		4485736C28F95E7F00BED641 /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
+		448573762900A55600BED641 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		4486D8CF28CF579C001343D7 /* FontStyleColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyleColors.swift; sourceTree = "<group>"; };
 		4488230128BCE7EF0026962C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		4498DF4C28E5B360002F86F3 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
@@ -283,6 +287,7 @@
 			children = (
 				449DA7E128EC882800736BDD /* ProjectCell.swift */,
 				447F33A928D9C344004D7517 /* MenuView.swift */,
+				448573762900A55600BED641 /* ProjectModel.swift */,
 			);
 			path = MenuView;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 				4442350828E47FCD00FAF292 /* Fancy3DotsIndexView.swift */,
 				449DA7DD28EC70B300736BDD /* TickImage.swift */,
 				449DA7DF28EC71B400736BDD /* ChooseColorSquares.swift */,
+				4485736C28F95E7F00BED641 /* CustomNavigationView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -615,7 +621,9 @@
 				447F33AA28D9C344004D7517 /* MenuView.swift in Sources */,
 				4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */,
 				44E0D74628F026E400F618A8 /* CalendarView.swift in Sources */,
+				4485736D28F95E7F00BED641 /* CustomNavigationView.swift in Sources */,
 				447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */,
+				448573772900A55600BED641 /* ProjectModel.swift in Sources */,
 				441F6EFB28E30C1200A85DBC /* SignUpUseCase.swift in Sources */,
 				4485736B28F951BC00BED641 /* AddProjectAlert.swift in Sources */,
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,

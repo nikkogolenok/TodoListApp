@@ -138,7 +138,6 @@ struct CreateTaskView: View {
                             .frame(width: 295, height: 48)
                             .cornerRadius(5)
                             .background(.red)
-                            .foregroundColor(.white)
                         }
                     }
                         
@@ -154,6 +153,7 @@ struct CreateTaskView: View {
                             .cornerRadius(5)
                             .padding(.horizontal, 16)
                             .padding(.top, 127)
+                            .background(.white)
                     }
                     .background(
                         Color.black.opacity(0.5)

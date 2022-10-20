@@ -15,13 +15,9 @@ struct CustomDatePicker: View {
     // MARK: Current Day
     var currentDay: Date = Date()
     
-    
     var body: some View {
         
         VStack(spacing: 5) {
-            
-            
-            
             // Days...
             let days: [String] = ["M", "T", "W", "T", "F", "S", "S"]
             

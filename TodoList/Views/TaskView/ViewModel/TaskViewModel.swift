@@ -13,6 +13,10 @@ class TaskViewModel: ObservableObject {
         TaskModel(task: "Meet according with design team", time: "10:00 am", offset: 0, isCompleted: false, isSwipped: false)
     ]
     
+    @Published var items1: [TaskAllModel] = [
+        TaskAllModel(task: "Go fishing with Stephen", time: "9:00 am", offset: 0, isCompleted: true, isSwipped: false, date: Date(timeIntervalSinceReferenceDate: NSTimeIntervalSince1970)),
+    ]
+    
     // MARK: Current Week Days
     @Published var currentWeek: [Date] = []
     

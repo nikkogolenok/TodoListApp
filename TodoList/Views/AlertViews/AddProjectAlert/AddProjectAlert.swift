@@ -7,21 +7,27 @@
 
 import SwiftUI
 
-enum TapToColors {
-    case blue
-    case red
-    case green
-    case black
-    case white
+enum TapToColors: String, Codable {
+    case blue = "colorSquareBlue"
+    case red = "colorSquareRed"
+    case green = "colorSquareGreen"
+    case black = "colorSquareBlack"
+    case white = "colorSquareLightBrown"
 }
 
 struct AddProjectAlert: View {
-    
+
     // MARK: - Variables
-    @State private var textFieldProject = ""
+    @AppStorage("projects") var protectsStore: Data = Data()
+    let encoder = JSONEncoder()
+    
+    @State private var nameProject = ""
     @State private var changeColor: TapToColors = .blue
+    @State private var saveProject: [ProjectModel] = []
     @EnvironmentObject var alert: Show
     
+    @State var showProjectCell: Bool = false
+
     // MARK: - Body
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
@@ -29,24 +35,24 @@ struct AddProjectAlert: View {
                 Text("Title")
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                     .foregroundColor(FontStyleColors.colorGray)
-                
-                TextField("Enter name project", text: $textFieldProject) {
-                    
+
+                TextField("Enter name project", text: $nameProject) {
+
                 }
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                 .foregroundColor(Color.black.opacity(1))
-                .onChange(of: textFieldProject) { value in
+                .onChange(of: nameProject) { value in
                     if value.count > 32 {
-                        self.textFieldProject = String(value.prefix(32))
+                        self.nameProject = String(value.prefix(32))
                     }
                 }
             }
-            
+
             VStack(alignment: .leading, spacing: 17) {
                 Text("Choose Color")
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                     .foregroundColor(FontStyleColors.colorGray)
-                
+
                 HStack(spacing: 12) {
                     ZStack {
                         ChooseColorSquares(color: FontStyleColors.colorSquareBlue)
@@ -57,7 +63,7 @@ struct AddProjectAlert: View {
                             TickImage()
                         }
                     }
-                    
+
                     ZStack {
                         ChooseColorSquares(color: FontStyleColors.colorSquareRed)
                             .onTapGesture {
@@ -67,7 +73,7 @@ struct AddProjectAlert: View {
                             TickImage()
                         }
                     }
-                    
+
                     ZStack {
                         ChooseColorSquares(color: FontStyleColors.colorSquareGreen)
                             .onTapGesture {
@@ -77,7 +83,7 @@ struct AddProjectAlert: View {
                             TickImage()
                         }
                     }
-                    
+
                     ZStack {
                         ChooseColorSquares(color: FontStyleColors.colorSquareBlack)
                             .onTapGesture {
@@ -87,7 +93,7 @@ struct AddProjectAlert: View {
                             TickImage()
                         }
                     }
-                    
+
                     ZStack {
                         ChooseColorSquares(color: FontStyleColors.colorSquareLightBrown)
                             .onTapGesture {
@@ -98,11 +104,17 @@ struct AddProjectAlert: View {
                         }
                     }
                 }
-                
+
             }
-            
+
             Button(action: {
-                alert.textAlert = String(textFieldProject)
+                print("\(nameProject)")
+                let project = ProjectModel(color: changeColor, nameProject: nameProject)
+                alert.projects.append(project)
+                saveProject.append(project)
+                if let data = try? encoder.encode(saveProject) {
+                    protectsStore = data
+                }
                 alert.show.toggle()
             }) {
                 Text("Done")
@@ -111,7 +123,7 @@ struct AddProjectAlert: View {
             }
             .frame(width: 295, height: 48)
             .background(FontStyleColors.colorRed)
-            
+            .cornerRadius(5)
         }
         .padding(.leading, 29)
         .frame(width: 327, height: 350)
