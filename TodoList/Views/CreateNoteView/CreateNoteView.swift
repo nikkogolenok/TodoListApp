@@ -115,12 +115,11 @@ struct CreateNoteView: View {
                         .foregroundColor(FontStyleColors.colorWhite)
                 }
                 .frame(width: 295, height: 48)
-                .cornerRadius(5)
                 .background(FontStyleColors.colorRed)
+                .cornerRadius(5)
                 
             }
             .frame(width: 343, height: 468)
-            .cornerRadius(5)
             .background(
                 Rectangle()
                     .fill(Color.white)

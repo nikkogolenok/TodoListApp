@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44045BC12901AEF60097D767 /* RectangularAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44045BC02901AEF60097D767 /* RectangularAndText.swift */; };
+		44045BC3290281BE0097D767 /* QuicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44045BC2290281BE0097D767 /* QuicksView.swift */; };
+		44045BC5290287570097D767 /* QuickModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44045BC4290287570097D767 /* QuickModel.swift */; };
+		44045BC7290288240097D767 /* QuickViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44045BC6290288240097D767 /* QuickViewModel.swift */; };
 		4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4408264B28AB7B4F0067BA33 /* TodoListApp.swift */; };
 		4408265028AB7B520067BA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4408264F28AB7B520067BA33 /* Assets.xcassets */; };
 		4408265328AB7B520067BA33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4408265228AB7B520067BA33 /* Preview Assets.xcassets */; };
@@ -23,6 +27,8 @@
 		4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62128D32B6B004EE93E /* WorkListView.swift */; };
 		4428B62428D32BF3004EE93E /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62328D32BF3004EE93E /* ViewRouter.swift */; };
 		4428B62728D32CF4004EE93E /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62628D32CF4004EE93E /* TabBarIcon.swift */; };
+		442EB523291D23E100BA8076 /* Localizable.string.strings in Resources */ = {isa = PBXBuildFile; fileRef = 442EB520291D23E100BA8076 /* Localizable.string.strings */; };
+		442EB526291D2C1000BA8076 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EB525291D2C1000BA8076 /* MonthView.swift */; };
 		4442350928E47FCD00FAF292 /* Fancy3DotsIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350828E47FCD00FAF292 /* Fancy3DotsIndexView.swift */; };
 		4442350C28E48EC600FAF292 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350B28E48EC600FAF292 /* OnboardView.swift */; };
 		4442350F28E4A9CD00FAF292 /* WelcomLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350E28E4A9CD00FAF292 /* WelcomLabels.swift */; };
@@ -30,6 +36,8 @@
 		4442351328E4B09A00FAF292 /* TwoNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442351228E4B09A00FAF292 /* TwoNavigationLink.swift */; };
 		4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4449A01728D0BE29001720DD /* UserViewModel.swift */; };
 		444AC83D28C23DF2004B48B1 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444AC83C28C23DF2004B48B1 /* CustomBackButton.swift */; };
+		447A02CA29096C0500FEC469 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447A02C929096C0500FEC469 /* Database.swift */; };
+		447A02CD29096D4A00FEC469 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 447A02CB29096D4A00FEC469 /* User.xcdatamodeld */; };
 		447B467528AFF5E2005C7291 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467428AFF5E2005C7291 /* SignInView.swift */; };
 		447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467628B0FC64005C7291 /* ForgotPasswordView.swift */; };
 		447B467928B10635005C7291 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B467828B10635005C7291 /* SignUpView.swift */; };
@@ -69,6 +77,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44045BC02901AEF60097D767 /* RectangularAndText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularAndText.swift; sourceTree = "<group>"; };
+		44045BC2290281BE0097D767 /* QuicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuicksView.swift; sourceTree = "<group>"; };
+		44045BC4290287570097D767 /* QuickModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickModel.swift; sourceTree = "<group>"; };
+		44045BC6290288240097D767 /* QuickViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickViewModel.swift; sourceTree = "<group>"; };
 		4408264828AB7B4F0067BA33 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4408264B28AB7B4F0067BA33 /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		4408264F28AB7B520067BA33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +100,9 @@
 		4428B62128D32B6B004EE93E /* WorkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkListView.swift; sourceTree = "<group>"; };
 		4428B62328D32BF3004EE93E /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		4428B62628D32CF4004EE93E /* TabBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIcon.swift; sourceTree = "<group>"; };
+		442EB521291D23E100BA8076 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.string.strings; sourceTree = "<group>"; };
+		442EB522291D23E100BA8076 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.string.strings; sourceTree = "<group>"; };
+		442EB525291D2C1000BA8076 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		4442350828E47FCD00FAF292 /* Fancy3DotsIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fancy3DotsIndexView.swift; sourceTree = "<group>"; };
 		4442350B28E48EC600FAF292 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		4442350E28E4A9CD00FAF292 /* WelcomLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomLabels.swift; sourceTree = "<group>"; };
@@ -95,6 +110,8 @@
 		4442351228E4B09A00FAF292 /* TwoNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoNavigationLink.swift; sourceTree = "<group>"; };
 		4449A01728D0BE29001720DD /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		444AC83C28C23DF2004B48B1 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		447A02C929096C0500FEC469 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		447A02CC29096D4A00FEC469 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
 		447B467428AFF5E2005C7291 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		447B467628B0FC64005C7291 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		447B467828B10635005C7291 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -163,6 +180,7 @@
 		4408264A28AB7B4F0067BA33 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				442EB51F291D23E100BA8076 /* Localization */,
 				4485735E28F837E600BED641 /* TaskModel */,
 				441F6EF828E30B6500A85DBC /* Webservices */,
 				4449A01628D0BE0C001720DD /* ViewModel */,
@@ -197,8 +215,7 @@
 		441F6EF828E30B6500A85DBC /* Webservices */ = {
 			isa = PBXGroup;
 			children = (
-				441F6F0228E30D9D00A85DBC /* Remote */,
-				441F6EF928E30BA500A85DBC /* UseCase */,
+				447A02C729096B4E00FEC469 /* DataSources */,
 			);
 			path = Webservices;
 			sourceTree = "<group>";
@@ -233,6 +250,22 @@
 				4485733C28F5CA0500BED641 /* TabBarView.swift */,
 			);
 			path = WorkListView;
+			sourceTree = "<group>";
+		};
+		442EB51F291D23E100BA8076 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				442EB520291D23E100BA8076 /* Localizable.string.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		442EB524291D2BEE00BA8076 /* MonthView */ = {
+			isa = PBXGroup;
+			children = (
+				442EB525291D2C1000BA8076 /* MonthView.swift */,
+			);
+			path = MonthView;
 			sourceTree = "<group>";
 		};
 		4442350A28E48EB000FAF292 /* Model */ = {
@@ -272,6 +305,25 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		447A02C729096B4E00FEC469 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				447A02C829096BC300FEC469 /* CoreData */,
+				441F6EF928E30BA500A85DBC /* UseCase */,
+				441F6F0228E30D9D00A85DBC /* Remote */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		447A02C829096BC300FEC469 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				447A02C929096C0500FEC469 /* Database.swift */,
+				447A02CB29096D4A00FEC469 /* User.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		447F339B28D9C26E004D7517 /* TaskView */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +348,9 @@
 			isa = PBXGroup;
 			children = (
 				447F33A128D9C312004D7517 /* QuickView.swift */,
+				44045BC2290281BE0097D767 /* QuicksView.swift */,
+				44045BC4290287570097D767 /* QuickModel.swift */,
+				44045BC6290288240097D767 /* QuickViewModel.swift */,
 			);
 			path = QuickView;
 			sourceTree = "<group>";
@@ -397,6 +452,7 @@
 				4485733728F4149D00BED641 /* TaskFullView */,
 				44E0D74D28F0633900F618A8 /* CalendarWonthView */,
 				44E0D74428F026CE00F618A8 /* CalendarView */,
+				442EB524291D2BEE00BA8076 /* MonthView */,
 				4486D8CE28CF5729001343D7 /* CustomView */,
 			);
 			path = Views;
@@ -510,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				449DA7F128EEFE1600736BDD /* CreateTaskView.swift */,
+				44045BC02901AEF60097D767 /* RectangularAndText.swift */,
 			);
 			path = CreateTaskView;
 			sourceTree = "<group>";
@@ -590,6 +647,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 4408263F28AB7B4E0067BA33;
 			productRefGroup = 4408264928AB7B4F0067BA33 /* Products */;
@@ -607,6 +665,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4408265328AB7B520067BA33 /* Preview Assets.xcassets in Resources */,
+				442EB523291D23E100BA8076 /* Localizable.string.strings in Resources */,
 				4408265028AB7B520067BA33 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,20 +678,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				447F33AA28D9C344004D7517 /* MenuView.swift in Sources */,
+				44045BC5290287570097D767 /* QuickModel.swift in Sources */,
 				4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */,
 				44E0D74628F026E400F618A8 /* CalendarView.swift in Sources */,
+				44045BC12901AEF60097D767 /* RectangularAndText.swift in Sources */,
 				4485736D28F95E7F00BED641 /* CustomNavigationView.swift in Sources */,
 				447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */,
 				448573772900A55600BED641 /* ProjectModel.swift in Sources */,
 				441F6EFB28E30C1200A85DBC /* SignUpUseCase.swift in Sources */,
 				4485736B28F951BC00BED641 /* AddProjectAlert.swift in Sources */,
 				4408265C28AB95400067BA33 /* OnboardingView.swift in Sources */,
+				442EB526291D2C1000BA8076 /* MonthView.swift in Sources */,
 				4442350928E47FCD00FAF292 /* Fancy3DotsIndexView.swift in Sources */,
 				4442351328E4B09A00FAF292 /* TwoNavigationLink.swift in Sources */,
 				447B467B28B106DE005C7291 /* ResetPasswordView.swift in Sources */,
 				447F33A228D9C312004D7517 /* QuickView.swift in Sources */,
 				4485736928F85E1800BED641 /* RefreshTokenModel.swift in Sources */,
 				441F6F0428E30DE200A85DBC /* ApiClient.swift in Sources */,
+				44045BC3290281BE0097D767 /* QuicksView.swift in Sources */,
 				4408264C28AB7B4F0067BA33 /* TodoListApp.swift in Sources */,
 				449DA7E728EE323C00736BDD /* CreateCheckListView.swift in Sources */,
 				441F6EFF28E30C9E00A85DBC /* RefreshTokenUseCase.swift in Sources */,
@@ -640,6 +703,8 @@
 				4498DF5328E5CECD002F86F3 /* AlertPlusButton.swift in Sources */,
 				449DA7F228EEFE1600736BDD /* CreateTaskView.swift in Sources */,
 				4498DF5728E5D931002F86F3 /* AlertFilterView.swift in Sources */,
+				44045BC7290288240097D767 /* QuickViewModel.swift in Sources */,
+				447A02CA29096C0500FEC469 /* Database.swift in Sources */,
 				4485736328F85DD800BED641 /* SignUpUserModel.swift in Sources */,
 				449DA7E028EC71B400736BDD /* ChooseColorSquares.swift in Sources */,
 				44E0D74C28F037EE00F618A8 /* DateValue.swift in Sources */,
@@ -673,12 +738,25 @@
 				4485733928F4156600BED641 /* TaskFullView.swift in Sources */,
 				4485736728F85E0100BED641 /* SignOutUserModel.swift in Sources */,
 				441F6F0128E30CB600A85DBC /* SignOutUseCase.swift in Sources */,
+				447A02CD29096D4A00FEC469 /* User.xcdatamodeld in Sources */,
 				4442350C28E48EC600FAF292 /* OnboardView.swift in Sources */,
 				4408268128AFC8590067BA33 /* SuccesfulView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		442EB520291D23E100BA8076 /* Localizable.string.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442EB521291D23E100BA8076 /* en */,
+				442EB522291D23E100BA8076 /* ru */,
+			);
+			name = Localizable.string.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4408265428AB7B520067BA33 /* Debug */ = {
@@ -877,6 +955,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		447A02CB29096D4A00FEC469 /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				447A02CC29096D4A00FEC469 /* User.xcdatamodel */,
+			);
+			currentVersion = 447A02CC29096D4A00FEC469 /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4408264028AB7B4E0067BA33 /* Project object */;
 }

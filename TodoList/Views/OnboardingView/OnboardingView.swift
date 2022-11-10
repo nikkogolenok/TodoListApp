@@ -10,7 +10,18 @@ import SwiftUI
 @available(iOS 16.0, *)
 struct OnboardingView: View {
     
+    //MARK: - Localized Property
+    private let buttonText = NSLocalizedString("subtitleScreenOne", comment: "")
+    private let titleScreenOne = NSLocalizedString("titleScreenOne", comment: "")
+    private let titleScreenTwo = NSLocalizedString("titleScreenOne", comment: "")
+    private let titleScreenTheree = NSLocalizedString("titleScreenTheree", comment: "")
+    private let subtitleScreenOne = NSLocalizedString("subtitleScreenOne", comment: "")
+    private let subtitleScreenTwo = NSLocalizedString("subtitleScreenTwo", comment: "")
+    private let subtitleScreenTheree = NSLocalizedString("subtitleScreenTheree", comment: "")
+    
     // MARK: - Variables
+    @ObservedObject var userViewModel = UserViewModel()
+    @State var isLogin: Bool = false
     @State private var currentIndex = 0
     private let screens: [OnboardView] = [
         OnboardView(imageName: "onbordingImageFirst",
@@ -66,7 +77,7 @@ struct OnboardingView: View {
                             .frame(width: 438, height: 322)
                     }
                     NavigationLink("Get Started") {
-                        SignUpView()
+                        SignUpView(isLoading: $isLogin, userViewModel: userViewModel)
                     }
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                     .frame(width: 293, height: 48)

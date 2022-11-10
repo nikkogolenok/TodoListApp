@@ -11,6 +11,7 @@ import SwiftUI
 @available(iOS 16.0, *)
 struct TwoNavigationLink: View {
     
+    // MARK: - Variables
     @StateObject var viewRouter = ViewRouter()
     let titleLinkOne: String
     let titleLinkTwo: String
@@ -21,6 +22,7 @@ struct TwoNavigationLink: View {
     let bottom: CGFloat
     let trailing: CGFloat
     
+    // MARK: - Boby
     var body: some View {
         VStack(alignment: .center, spacing: spacing) {
             NavigationLink(titleLinkOne) {

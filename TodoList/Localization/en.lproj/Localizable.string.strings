@@ -1,0 +1,62 @@
+/* 
+  Localizable.string.strings
+  ToDoList
+
+  Created by Alex Paramonov on 2.09.22.
+  
+*/
+
+//MARK: - OnbordingScreen
+
+"titleScreenOne" = "Welcome to todo list";
+"titleScreenTwo" = "Work happens";
+"titleScreenTheree" = "Tasks and assign";
+
+"subtitleScreenOne" = "Whats going to happen tomorrow?";
+"subtitleScreenTwo" = "Get notified when work happens.";
+"subtitleScreenTheree" = "Task and assign them to colleagues.";
+
+"buttonOnbording" = "Get Started";
+
+//MARK: - SingUpScreen
+
+"titleSingUpScreen" = "Welcome";
+"subtitleSingUpScreen" = "Sign up to continue";
+"Username" = "Username";
+"placeholderEmail" = "Enter your email";
+"Password" = "Password";
+"placeholderPassword" = "Enter your password";
+"Sing_Up" = "Sing Up";
+"Sing_In" = "Sing In";
+
+//MARK: - SingInScreen
+"titleSingInScreen" = "Welcome Back";
+"subtitleSingInScreen" = "Sign in to continue";
+"Username" = "Username";
+"forgotPassword" = "Forgot Password";
+
+//MARK: - ForgotPasswordScreen
+"titleForgotScreen" = "Forgot Password";
+"subtitleForgotScreen" = "Please enter your email below to recevie your password reset instructions";
+"buttonSend" = "Send Request";
+
+//MARK: - ResetPasswordScreen
+"titleResetScreen" = "Reset Password";
+"subtitleResetScreen" = "Reset code was sent to your email. Please enter the code and create new password";
+"Reset_code" = "Reset code";
+"placeholderNumber" = "Enter your number";
+"New_password" = "New password";
+"Confirm_Password" = "Confirm Password";
+"placeholderConfirm" = "Enter your Confirm password";
+"Change_password" = "Change password";
+
+//MARK: - SuccesfulScreen
+"titleSuccesful" = "Succesful";
+"subtitleSuccesful" = "You have succesfully change password. Please use your new passwords when logging in.";
+
+//MARK: - WorkList Today
+"my_task"  = "My Task";
+"menu" = "Menu";
+"quick" = "Quick";
+"profile" = "Profile";
+

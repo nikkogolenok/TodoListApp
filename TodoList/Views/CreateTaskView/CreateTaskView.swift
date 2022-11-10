@@ -17,7 +17,6 @@ struct CreateTaskView: View {
     
     // MARK: - Body
     var body: some View {
-//        NavigationView {
             
             ZStack {
                 VStack {
@@ -27,9 +26,11 @@ struct CreateTaskView: View {
                     
                     Spacer()
                     
-                    Rectangle()
-                        .frame(height: 90)
-                        .foregroundColor(FontStyleColors.colorBar)
+//                    Rectangle()
+//                        .frame(height: 90)
+//                        .foregroundColor(FontStyleColors.colorBar)
+                    
+                    TabBarView(viewRouter: ViewRouter())
                 }
                 .edgesIgnoringSafeArea(.bottom)
                 
@@ -38,37 +39,20 @@ struct CreateTaskView: View {
                     VStack {
                         
                         HStack(spacing: 51) {
-                            HStack(alignment: .center, spacing: 8) {
-                                Text("For")
-                                
-                                ZStack {
-                                    Rectangle()
-                                        .frame(width: 90, height: 48)
-                                        .cornerRadius(50)
-                                        .foregroundColor(.gray)
-                                    Text("Assignee")
-                                }
-                            }
-                            
-                            HStack(alignment: .center, spacing: 8) {
-                                Text("In")
-                                ZStack {
-                                    Rectangle()
-                                        .frame(width: 90, height: 48)
-                                        .cornerRadius(50)
-                                        .foregroundColor(.gray)
-                                    Text("Project")
-                                }
-                            }
+                            RectangularAndText(text: "For", textInRectangular: "Assignee")
+                            RectangularAndText(text: "In", textInRectangular: "Project")
                         }
+                        .padding(.top, 32)
         
                         ZStack {
                             Rectangle()
                                 .frame(width: 343, height: 66)
-                                .foregroundColor(.gray)
+                                .foregroundColor(FontStyleColors.colorGray)
                             Text("Title")
+                                .padding(.leading, 24)
                                 .padding(.trailing, 282)
                         }
+                        .padding(.top, 24)
                         
                         VStack(alignment: .leading) {
                             Text("Description")
@@ -76,24 +60,36 @@ struct CreateTaskView: View {
                             ZStack {
                                 Rectangle()
                                     .frame(width: 295, height: 120)
-                                    .padding(.bottom, 75)
+                                    .foregroundColor(.white)
                                 
-                                
-                                
-                                Rectangle()
-                                    .frame(width: 295, height: 48)
-                                    .foregroundColor(.gray)
+                                ZStack {
+                                    Rectangle()
+                                        .frame(width: 295, height: 48)
+                                        .foregroundColor(FontStyleColors.colorGray)
+                                        .border(Color(red: 0.917, green: 0.917, blue: 0.917), width: 1)
+                                    .padding(.top, 75)
+                                    
+                                    Image(systemName: "paperclip")
+                                        .frame(width: 20, height: 21)
+                                        .padding(.top, 85)
+                                        .padding(.leading, 16)
+                                        .padding(.trailing, 260)
+                                        //.foregroundColor(.red)
+                                    
+                                }
                             }
+                            .border(Color(red: 0.917, green: 0.917, blue: 0.917), width: 1)
+                            .cornerRadius(5)
                         }
-                        .padding(.bottom, 24)
+                        .padding(.top, 16)
                         
                         ZStack {
                             Rectangle()
                                 .frame(width: 343, height: 66)
-                                .foregroundColor(.gray)
+                                .foregroundColor(FontStyleColors.colorGray)
                             HStack {
                                 Text("Due Date")
-                                
+                                    .padding(.leading, 24)
                                 ZStack {
                                     Rectangle()
                                         .frame(width: 90, height: 32)
@@ -108,6 +104,7 @@ struct CreateTaskView: View {
                             }
                             .padding(.trailing, 150)
                         }
+                        .padding(.top, 24)
                         
                                                 
                         VStack(alignment: .leading) {
@@ -118,7 +115,7 @@ struct CreateTaskView: View {
                                     Rectangle()
                                         .frame(width: 90, height: 48)
                                         .cornerRadius(50)
-                                        .foregroundColor(.gray)
+                                        .foregroundColor(FontStyleColors.colorGray)
                                     
                                     Text("Anyone")
                                 }
@@ -126,9 +123,10 @@ struct CreateTaskView: View {
                                 ZStack {
                                     Circle()
                                         .frame(width: 31, height: 31)
-                                        .foregroundColor(.gray)
+                                        .foregroundColor(FontStyleColors.colorGray)
                                     
                                     Text("+")
+                                        .foregroundColor(.white)
                                 }
                             }
                             
@@ -136,23 +134,28 @@ struct CreateTaskView: View {
                                 
                             }
                             .frame(width: 295, height: 48)
+                            .background(FontStyleColors.colorRed)
+                            .foregroundColor(FontStyleColors.colorWhite)
                             .cornerRadius(5)
-                            .background(.red)
+                            
+                            Spacer()
                         }
+                        .padding(.top, 24)
                     }
                         
                     .frame(width: 343, height: 669)
-                    .cornerRadius(5)
                     .background(.white)
+                    .cornerRadius(5)
                     .offset(y: -18)
                 }
                 
                 if showCalendavView {
                     GeometryReader { _ in
                         CalendarView()
+                            .frame(width: 344, height: 397)
                             .cornerRadius(5)
                             .padding(.horizontal, 16)
-                            .padding(.top, 127)
+                            //.padding(.top, 127)
                             .background(.white)
                     }
                     .background(

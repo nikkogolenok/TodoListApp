@@ -1,19 +1,20 @@
 //
-//  TaskView.swift
+//  MonthView.swift
 //  TodoList
 //
-//  Created by Никита Коголенок on 5.10.22.
+//  Created by Никита Коголенок on 10.11.22.
 //
 
 import SwiftUI
 
-struct TaskView: View {
+struct MonthView: View {
     
     // MARK: - Variables
     @State var currentButton: Bool = true
     @State var filterButton:  Bool = false
     @State var changeImage: Bool = false
     @StateObject var viewModel = TaskViewModel()
+    
     
     // MARK: - Body
     var body: some View {
@@ -23,23 +24,22 @@ struct TaskView: View {
             LazyVStack(spacing: 5, pinnedViews: [.sectionHeaders]) {
                 Section {
                     VStack {
+                        HStack(spacing: 2) {
+                            let day = viewModel.currentDay
+                            Text(viewModel.extractDate(date: day, format: "MMMM YYYY"))
+                            Image(systemName: changeImage ? "chevron.up" : "chevron.down")
+                        }
+                        .onTapGesture {
+                            if !changeImage {
+                                self.changeImage.toggle()
+                            }
+                        }
+                        sectionView()
+                        
+                        if changeImage {
+                           CalendarWonthView()
+                        }
                         tasksView()
-//                        HStack(spacing: 2) {
-//                            let day = viewModel.currentDay
-//                            Text(viewModel.extractDate(date: day, format: "MMMM YYYY"))
-//                            Image(systemName: changeImage ? "chevron.up" : "chevron.down")
-//                        }
-//                        .onTapGesture {
-//                            if !changeImage {
-//                                self.changeImage.toggle()
-//                            }
-//                        }
-////                        sectionView()
-//
-//                        if changeImage {
-//                           CalendarWonthView()
-//                        }
-//                        tasksView()
                     }
                 } header: {
                     headerView()
@@ -160,6 +160,7 @@ struct TaskView: View {
                             }
                         }
                 )
+
             }
         }
         .padding()
@@ -187,36 +188,10 @@ struct TaskView: View {
     }
 }
 
-struct TaskView_Previews: PreviewProvider {
+struct MonthView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView()
+        MonthView()
     }
 }
 
-// MARK: - UI Design Helper functions
-extension View {
-    
-    func hLeading() -> some View {
-        self
-            .frame(maxWidth: .infinity, alignment: .leading)
-    }
-    
-    func hTrailing() -> some View {
-        self
-            .frame(maxWidth: .infinity, alignment: .trailing)
-    }
-
-    func hCenter() -> some View {
-        self
-            .frame(maxWidth: .infinity, alignment: .center)
-    }
-    
-    func getSafeArea() -> UIEdgeInsets {
-        guard let screen = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return .zero }
-        
-        guard let safeArea = screen.windows.first?.safeAreaInsets else { return .zero}
-        
-        return safeArea
-    }
-}
 

@@ -12,6 +12,7 @@ struct CreateCheckListView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var changeColor: TapToColors = .blue
+    @StateObject var viewRouter: ViewRouter
     
     // MARK: - Body
     var body: some View {
@@ -38,6 +39,7 @@ struct CreateCheckListView: View {
                     Text("Title")
                     Text("Lorem ipsum dolor sit amet,consectetur adiiscing elet.")
                 }
+                .padding(.bottom, 18)
                 
                 VStack {
                     HStack {
@@ -71,7 +73,6 @@ struct CreateCheckListView: View {
                 
                 VStack(alignment: .leading, spacing: 17) {
                     Text("Choose Color")
-                    
                     
                     HStack(spacing: 12) {
                         ZStack {
@@ -126,6 +127,7 @@ struct CreateCheckListView: View {
                     }
                     
                 }
+                .padding(.bottom, 40)
                 
                 Button(action: {
                     
@@ -137,8 +139,9 @@ struct CreateCheckListView: View {
                 }
                 .frame(width: 295, height: 48)
                 .background(FontStyleColors.colorRed)
+                
             }
-//            .padding(.leading, 30)
+            .frame(width: 343, height: 576)
             .background(
                 Rectangle()
                     .fill(Color.white)
@@ -146,8 +149,9 @@ struct CreateCheckListView: View {
                             radius: 9,
                             x: 0, y: 0)
             )
-            .offset(y: -145)
+            .offset(y: -100)
         }
+        
         .edgesIgnoringSafeArea(.bottom)
         .navigationTitle("Add Check List")
         .navigationBarBackButtonHidden(true)
@@ -169,7 +173,7 @@ struct CreateCheckListView: View {
 @available(iOS 16.0, *)
 struct CreateCheckListView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateCheckListView()
+        CreateCheckListView(viewRouter: ViewRouter())
     }
 }
 

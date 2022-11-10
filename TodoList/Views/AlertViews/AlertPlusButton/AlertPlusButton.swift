@@ -34,7 +34,7 @@ struct AlertPlusButton: View {
                 .frame(width: 267, height: 2)
                 .foregroundColor(Color(red: 228/255, green: 228/255, blue: 228/255))
                 NavigationLink("Add Check List") {
-                    CreateCheckListView()
+                    CreateCheckListView(viewRouter: ViewRouter())
                 }
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                 .foregroundColor(.black)

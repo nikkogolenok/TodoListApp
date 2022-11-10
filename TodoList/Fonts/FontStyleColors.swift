@@ -22,4 +22,5 @@ struct FontStyleColors {
     static let colorSquareGreen = Color("colorSquareGreen")
     static let colorSquareLightBrown = Color("colorSquareLightBrown")
     static let colorSquareRed = Color("colorSquareRed")
+    static let lightGray = Color("lightGray")
 }

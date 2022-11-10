@@ -10,13 +10,27 @@ import SwiftUI
 @available(iOS 16.0, *)
 struct SignUpView: View {
     
+    //MARK: - Localized Property
+    private let buttonText = NSLocalizedString("subtitleScreenOne", comment: "")
+    private let titleSingUpScreen = NSLocalizedString("titleSingUpScreen", comment: "")
+    private let subtitleSingUpScreen = NSLocalizedString("subtitleSingUpScreen", comment: "")
+    private let usernameLocalized = NSLocalizedString("Username", comment: "")
+    private let placeholderEmail = NSLocalizedString("placeholderEmail", comment: "")
+    private let Password = NSLocalizedString("Password", comment: "")
+    private let placeholderPassword = NSLocalizedString("placeholderPassword", comment: "")
+    private let singUpButton = NSLocalizedString("Sing_Up", comment: "")
+    private let singInButton = NSLocalizedString("Sing_In", comment: "")
+    
     // MARK: - Variables
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject var viewRouter = ViewRouter()
-    @State private var emailTextField = ""
-    @State private var passwordTextField = ""
+    @State private var username = ""
+    @State private var password = ""
+    @State private var useremail = ""
+    @Binding var isLoading: Bool
     @State private var image = UIImage()
     @State private var showSheet = false
+    @ObservedObject var userViewModel = UserViewModel()
     
     var body: some View {
         
@@ -43,19 +57,68 @@ struct SignUpView: View {
                 ImagePicker(sourseType: .photoLibrary, selectedImage: self.$image)
             }
         
-            RegistrationTextFields(emailTextField: emailTextField,
-                                   passwordTextField: passwordTextField,
-                                   titleUser: "Username",
-                                   textFieldUser: "Enter your email",
-                                   titlePassword: "Password",
-                                   textFieldPassword: "Enter your password",
-                                   top: 26, leading: 24, bottom: 17, trailing: 0)
+//            RegistrationTextFields(emailTextField: username,
+//                                   passwordTextField: password,
+//                                   titleUser: "Username",
+//                                   textFieldUser: "Enter your email",
+//                                   titlePassword: "Password",
+//                                   textFieldPassword: "Enter your password",
+//                                   top: 26, leading: 24, bottom: 17, trailing: 0)
             
-            TwoNavigationLink(viewRouter: viewRouter,
-                              titleLinkOne: "Sign Up",
-                              titleLinkTwo: "Sign In",
-                              spacing: 51,
-                              top: 72, leading: 0, bottom: 0, trailing: 0)
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Username")
+                    .font(.custom(FontsStyleManager.Roboto.medium, size: 20))
+                
+                TextField("Enter your name", text: $username)
+                    .textContentType(.username)
+                
+                Rectangle()
+                    .frame(width: 326, height: 1)
+                    .foregroundColor(.gray)
+            }
+            .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
+            
+            
+            VStack(alignment: .leading) {
+                Text("Password")
+                    .font(.custom(FontsStyleManager.Roboto.medium, size: 20))
+                SecureField("Enter your password", text: $password) {
+                    
+                }
+                .textContentType(.password)
+                
+                Rectangle()
+                    .frame(width: 326, height: 1)
+                    .foregroundColor(.gray)
+            }
+            .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
+            
+            VStack(alignment: .center, spacing: 51) {
+                Button("Sign Up") {
+                    userViewModel.signUp(username: username, email: useremail, password: password)
+                }
+                .font(.custom(FontsStyleManager.Roboto.thin, size: 21))
+                .frame(width: 327, height: 48)
+                .background(FontStyleColors.colorRed)
+                .cornerRadius(5)
+                .foregroundColor(FontStyleColors.colorWhite)
+                .cornerRadius(5)
+                
+                NavigationLink("Sign In") {
+                    WorkListView(viewRouter: viewRouter)
+                }
+                .frame(width: 60, height: 21)
+                .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
+                .cornerRadius(5)
+                .foregroundColor(FontStyleColors.colorRed)
+            }
+            .padding(.top, 72)
+            
+//            TwoNavigationLink(viewRouter: viewRouter,
+//                              titleLinkOne: "Sign Up",
+//                              titleLinkTwo: "Sign In",
+//                              spacing: 51,
+//                              top: 72, leading: 0, bottom: 0, trailing: 0)
         }
         .offset(y: -40)
         .navigationBarBackButtonHidden(true)
@@ -69,9 +132,9 @@ struct SignUpView: View {
     }
 }
 
-@available(iOS 16.0, *)
-struct SignUpView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
-    }
-}
+//@available(iOS 16.0, *)
+//struct SignUpView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SignUpView()
+//    }
+//}

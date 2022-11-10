@@ -27,6 +27,7 @@ struct CalendarView: View {
             .foregroundColor((FontStyleColors.colorWhite))
         }
         .frame(width: 344, height: 397)
+        .border(.red, width: 5)
         .cornerRadius(5)
     }
 }
