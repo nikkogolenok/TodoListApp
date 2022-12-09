@@ -14,8 +14,8 @@ struct RemoteService {
 
 enum ApiPath: String {
     case singUp       = "sign-up"
-    case singIn       = "sing-in"
-    case singOut      = "sing-out"
+    case singIn       = "sign-in"
+    case singOut      = "sign-out"
     case refreshToken = "refresh-token"
 }
 

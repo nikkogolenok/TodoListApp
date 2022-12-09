@@ -16,6 +16,8 @@ struct TaskFullView: View {
     @State var showCalendavView = false
     @State private var showSheet = false
     @State private var showAlert = false
+    @State private var dismissView = false
+    @StateObject var viewRouter = ViewRouter()
     
     // MARK: - Body
     var body: some View {
@@ -33,16 +35,23 @@ struct TaskFullView: View {
             
             ZStack {
                 VStack(spacing: 25) {
-                    HStack {
-                        Image(systemName: "xmark")
-                            .padding(.leading, 16)
-                        Spacer()
-                        Image(systemName: "gearshape.fill")
-                            .padding(.trailing, 16)
-                            .onTapGesture {
-                                self.showAlert.toggle()
-                            }
+                    VStack {
+                        HStack {
+                            Image(systemName: "xmark")
+                                .padding(.leading, 16)
+                                .onTapGesture {
+                                    self.dismissView.toggle()
+                                    presentationMode.wrappedValue.dismiss()
+                                }
+                            Spacer()
+                            Image(systemName: "gearshape.fill")
+                                .padding(.trailing, 16)
+                                .onTapGesture {
+                                    self.showAlert.toggle()
+                                }
+                        }
                     }
+//                    .padding(.bottom, 24)
                     
                     Text("Meeting according with design team in Central Park")
                     
@@ -78,8 +87,10 @@ struct TaskFullView: View {
                             
                             Image("smallCalender")
                                 .resizable()
-                                .frame(width: 18, height: 18)
+                                .frame(width: 20, height: 20)
                                 .cornerRadius(9)
+                                .padding(.leading, 10)
+                                .padding(.trailing, 15)
                         
                         
 //                                .clipShape(Circle())
@@ -99,8 +110,10 @@ struct TaskFullView: View {
                             
                             Image("smallCalender")
                                 .resizable()
-                                .frame(width: 18, height: 18)
+                                .frame(width: 20, height: 20)
                                 .cornerRadius(9)
+                                .padding(.leading, 10)
+                                .padding(.trailing, 15)
                         
                         
 //                                .clipShape(Circle())
@@ -118,10 +131,12 @@ struct TaskFullView: View {
                     VStack(alignment: .leading) {
                         HStack(alignment: .top, spacing: 12) {
                             
-                            Image("smallCalender")
+                            Image("persons")
                                 .resizable()
-                                .frame(width: 18, height: 18)
+                                .frame(width: 20, height: 20)
                                 .cornerRadius(9)
+                                .padding(.leading, 10)
+                                .padding(.trailing, 15)
                             
                             VStack(alignment: .leading) {
                                 Text("Members")
@@ -139,24 +154,25 @@ struct TaskFullView: View {
                             .frame(width: 295, height: 2)
                     }
                     
-                    
                     VStack(alignment: .leading) {
                         HStack(alignment: .top, spacing: 12) {
                             
                             Image("smallCalender")
                                 .resizable()
-                                .frame(width: 18, height: 18)
-                                .cornerRadius(9)
+                                .frame(width: 20, height: 20)
+                                .cornerRadius(10)
+                                .padding(.leading, 19)
+                                .padding(.trailing, 15)
                             
                             VStack(alignment: .leading) {
-                                Text("Members")
+                                Text("Tag")
                                 
                                 ZStack {
                                     Rectangle()
                                         .frame(width: 90, height: 40)
-                                        .cornerRadius(5)
                                         .foregroundColor(.white)
                                         .border(.gray, width: 1)
+                                        .cornerRadius(5)
                                     
                                     Text("Person")
                                 }
@@ -170,8 +186,8 @@ struct TaskFullView: View {
                             
                         }
                         .frame(width: 295, height: 48)
+                        .background(Color(red: 0.376, green: 0.455, blue: 0.976))
                         .cornerRadius(5)
-                        .background(.blue)
                         .foregroundColor(.white)
                         
                         
@@ -195,8 +211,8 @@ struct TaskFullView: View {
                     GeometryReader { _ in
                         AlertFilterView(firstText: "Add Member", secondText: "Edit Task", thirdText: "Delete Task")
                             .cornerRadius(5)
-                            .padding(.leading, 50)
-                            .padding(.top, 30)
+                            .padding(.leading, 100)
+                            .padding(.top, 100)
                     }
                     .background(
                         Color.black.opacity(0.65)
@@ -208,9 +224,16 @@ struct TaskFullView: View {
                     )
 
                 }
+                
+                if dismissView {
+                    GeometryReader { _ in
+                        WorkListView(viewRouter: viewRouter)
+                    }
+                }
             }
             .frame(width: 343, height: 716)
             .background(.white)
+            .cornerRadius(5)
             .offset(y: -10)
         }
         .edgesIgnoringSafeArea(.bottom)
@@ -220,13 +243,6 @@ struct TaskFullView: View {
             FontStyleColors.colorRed,
             for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
-        .toolbar {
-            ToolbarItemGroup(placement: .navigationBarLeading) {
-                CustomBackButton {
-                    presentationMode.wrappedValue.dismiss()
-                }
-            }
-        }
     }
 }
 

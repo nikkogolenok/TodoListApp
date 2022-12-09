@@ -14,6 +14,8 @@ struct TaskView: View {
     @State var filterButton:  Bool = false
     @State var changeImage: Bool = false
     @StateObject var viewModel = TaskViewModel()
+    @State var selectedIndex = 0
+    let date = Date()
     
     // MARK: - Body
     var body: some View {
@@ -21,77 +23,23 @@ struct TaskView: View {
             
             // MARK: Lazy Stack With Pinned Header
             LazyVStack(spacing: 5, pinnedViews: [.sectionHeaders]) {
-                Section {
-                    VStack {
-                        tasksView()
-//                        HStack(spacing: 2) {
-//                            let day = viewModel.currentDay
-//                            Text(viewModel.extractDate(date: day, format: "MMMM YYYY"))
-//                            Image(systemName: changeImage ? "chevron.up" : "chevron.down")
-//                        }
-//                        .onTapGesture {
-//                            if !changeImage {
-//                                self.changeImage.toggle()
-//                            }
-//                        }
-////                        sectionView()
-//
-//                        if changeImage {
-//                           CalendarWonthView()
-//                        }
-//                        tasksView()
-                    }
-                } header: {
+                VStack {
                     headerView()
+                    
+                    switch selectedIndex {
+                    case 0: WorkListTodayView()
+                    case 1: WorkListMonthView()
+                    default: WorkListTodayView()
+                    }
+                    
+                    
+                    
                 }
             }
         }
         .ignoresSafeArea(.container, edges: .top)
     }
-    
     // MARK: - Methods
-    
-    // MARK: Section
-    func sectionView() -> some View {
-        // MARK: Current Week View
-//        ScrollView(.horizontal, showsIndicators: false) {
-            
-        VStack {
-            HStack(spacing: 10) {
-               
-                ForEach(viewModel.currentWeek, id: \.self) { day in
-                    
-                    VStack(spacing: 10) {
-                        
-                        // EEE will return day as Mon, Tue
-                        Text(viewModel.extractDate(date: day, format: "EEE"))
-                            .font(.system(size: 14))
-                            .fontWeight(.semibold)
-                        
-                        Text(viewModel.extractDate(date: day, format: "dd"))
-                            .font(.system(size: 15))
-                        
-                        Circle()
-                            .fill(.gray)
-                            .frame(width: 8, height: 8)
-                            .opacity(viewModel.isToday(date: day) ? 1 : 0)
-                    }
-                    //.foregroundStyle(viewModel.isToday(date: day) ? .gray : .white)
-                    .foregroundColor(viewModel.isToday(date: day) ? .gray : .black)
-                    // MARK: Capsule Shape
-                    .frame(width: 45, height: 90)
-                    .contentShape(Capsule())
-                    .onTapGesture {
-                        withAnimation {
-                            viewModel.currentDay = day
-                        }
-                    }
-                }
-            }
-            .padding(.horizontal)
-        }
-    }
-    
     // MARK: Header
     func headerView() -> some View {
         
@@ -102,7 +50,7 @@ struct TaskView: View {
                         Spacer()
                         Text("Work List")
                             .foregroundColor(.white)
-
+                        
                         Image(systemName: "slider.horizontal.3")
                             .resizable()
                             .foregroundColor(.white)
@@ -113,26 +61,25 @@ struct TaskView: View {
                             }
                     }
                     .padding(.top, 25)
-
+                    
                     HStack {
                         Text("Today")
-//                        NavigationLink("Today") {
-//                            TodayView()
-//                        }
                             .padding(.trailing, 120)
                             .foregroundColor(Color(white: 1, opacity: currentButton ? 1 : 0.5))
-
+                        
                             .onTapGesture {
                                 if !self.currentButton {
+                                    self.selectedIndex = 0
                                     self.currentButton.toggle()
                                 }
                             }
-
+                        
                         Text("Month")
                             .foregroundColor(Color(white: 1, opacity: currentButton ? 0.5 : 1))
-
+                        
                             .onTapGesture {
                                 if self.currentButton {
+                                    self.selectedIndex = 1
                                     self.currentButton.toggle()
                                 }
                             }
@@ -144,7 +91,7 @@ struct TaskView: View {
                         .padding(currentButton ? .trailing : .leading, currentButton ? 180 : 190)
                 }
             }
-
+            
             if filterButton {
                 GeometryReader { _ in
                     AlertFilterView(firstText: "Incomplete Tasks", secondText: "Completd Tasks", thirdText: "All Tasks")
@@ -160,6 +107,7 @@ struct TaskView: View {
                             }
                         }
                 )
+                .ignoresSafeArea()
             }
         }
         .padding()
@@ -167,25 +115,8 @@ struct TaskView: View {
         .background(FontStyleColors.colorRed)
         .navigationBarHidden(true)
     }
-    
-    // MARK: TaskView
-    func tasksView() -> some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            LazyVStack(spacing: 0) {
-                ForEach(viewModel.items) { item in
-                    TasksView(task: $viewModel.items[getIndex(tasks: item)], tasks: $viewModel.items)
-                }
-            }
-        }
-    }
-    
-    
-    func getIndex(tasks: TaskModel) -> Int {
-        return viewModel.items.firstIndex { (task1) -> Bool in
-            return tasks.id == task1.id
-        } ?? 0
-    }
 }
+
 
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
@@ -205,7 +136,7 @@ extension View {
         self
             .frame(maxWidth: .infinity, alignment: .trailing)
     }
-
+    
     func hCenter() -> some View {
         self
             .frame(maxWidth: .infinity, alignment: .center)

@@ -23,14 +23,29 @@ struct QuickView: View {
         //            .foregroundColor(.white)
         
         
-        ScrollView(.vertical, showsIndicators: false) {
-            LazyVStack(spacing: 16) {
-                ForEach(viewModel.items) { item in
-                    QuicksView(quick: $viewModel.items[getIndex(tasks: item)], quicks: $viewModel.items)
+        VStack(spacing: 32) {
+            ZStack {
+                VStack {
+                    Text("Quick Notes")
+                        .foregroundColor(Color(red: 0.192, green: 0.192, blue: 0.192))
+                        .padding(.top, 48)
+                    
                 }
             }
+            .frame(width: 375, height: 100)
+//            .background(.blue)
+            .navigationBarHidden(true)
+            
+            ScrollView(.vertical, showsIndicators: false) {
+                LazyVStack(spacing: 16) {
+                    ForEach(viewModel.items) { item in
+                        QuicksView(quick: $viewModel.items[getIndex(tasks: item)], quicks: $viewModel.items)
+                    }
+                }
+                .shadow(color: .gray.opacity(0.1), radius: 2, x: 0, y: 9)
+            }
+            .navigationBarHidden(true)
         }
-        
     }
     
     func getIndex(tasks: QuickModel) -> Int {
@@ -46,7 +61,3 @@ struct QuickView_Previews: PreviewProvider {
     }
 }
 
-
-//ForEach(viewModel.items) { item in
-//    TasksView(task: $viewModel.items[getIndex(tasks: item)], tasks: $viewModel.items)
-//}

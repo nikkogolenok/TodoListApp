@@ -8,71 +8,55 @@
 import SwiftUI
 
 struct CustomNavigationView: View {
+    var title: String
+    
     var body: some View {
         VStack {
-            headerView()
-            Spacer()
+            HeaderView(title: title)
         }
-        
-        
     }
 }
 
 struct CustomNavigationView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomNavigationView()
+        CustomNavigationView(title: "New Task")
     }
 }
 
-
-
-func headerView() -> some View {
+struct HeaderView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @State private var dismissView = false
+    var title: String
     
-    ZStack {
-        VStack {
+    var body: some View {
+        ZStack {
             VStack {
-                HStack(spacing: 100) {
-                    
-                    Image(systemName: "arrow.backward")
-                        .resizable()
-                        .foregroundColor(.white)
-                        .frame(width: 20, height: 21)
-                        .padding(.leading, 28)
-                    
-                    Text("Work List")
-                        .foregroundColor(.white)
-    
-                    Spacer()
-    
+                VStack {
+                    HStack(spacing: 100) {
+                        
+                        Image(systemName: "arrow.backward")
+                            .resizable()
+                            .foregroundColor(.white)
+                            .frame(width: 20, height: 21)
+                            .padding(.leading, 28)
+                            .onTapGesture {
+                                self.dismissView.toggle()
+                                presentationMode.wrappedValue.dismiss()
+                            }
+                        
+                        Text(title)
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .lineLimit(1)
+                        Spacer()
+                    }
+                    .padding(.bottom, 48)
                 }
-                .padding(.bottom, 72)
             }
         }
+        .frame(width: 375, height: 107)
+        .padding(.horizontal, 0)
+        .background(FontStyleColors.colorRed)
     }
-    .frame(width: 375, height: 151)
-    .padding(.horizontal, 0)
-    .background(FontStyleColors.colorRed)
 }
 
-//ZStack {
-//    VStack {
-//        VStack {
-//            HStack(spacing: 100) {
-//                Spacer()
-//                Text("Work List")
-//                    .foregroundColor(.white)
-//
-//                Image(systemName: "slider.horizontal.3")
-//                    .resizable()
-//                    .foregroundColor(.white)
-//                    .frame(width: 20, height: 21)
-//                    .padding(.trailing, 28)
-//
-//            }
-//            .padding(.top, 25)
-//
-//
-//
-//        }
-//    }
-//}

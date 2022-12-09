@@ -19,15 +19,13 @@ struct CreateCheckListView: View {
         
         ZStack {
             VStack {
-                Rectangle()
-                    .frame(height: 44)
-                    .foregroundColor(FontStyleColors.colorRed)
+//                Rectangle()
+//                    .frame(height: 44)
+//                    .foregroundColor(FontStyleColors.colorRed)
+                
+                CustomNavigationView(title: "Add Check")
                 
                 Spacer()
-//
-//                Rectangle()
-//                    .frame(height: 90)
-//                    .foregroundColor(FontStyleColors.colorBar)
                 
                 TabBarView(viewRouter: ViewRouter())
             }
@@ -129,10 +127,9 @@ struct CreateCheckListView: View {
                 }
                 .padding(.bottom, 40)
                 
-                Button(action: {
-                    
-                    
-                }) {
+                NavigationLink {
+                    WorkListView(viewRouter: viewRouter)
+                } label: {
                     Text("Done")
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                         .foregroundColor(FontStyleColors.colorWhite)
@@ -149,24 +146,10 @@ struct CreateCheckListView: View {
                             radius: 9,
                             x: 0, y: 0)
             )
-            .offset(y: -100)
+            
+            .offset(y: -15)
         }
-        
-        .edgesIgnoringSafeArea(.bottom)
-        .navigationTitle("Add Check List")
         .navigationBarBackButtonHidden(true)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbarBackground(
-            FontStyleColors.colorRed,
-            for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
-        .toolbar {
-            ToolbarItemGroup(placement: .navigationBarLeading) {
-                CustomBackButton {
-                    presentationMode.wrappedValue.dismiss()
-                }
-            }
-        }
     }
 }
 
@@ -177,14 +160,3 @@ struct CreateCheckListView_Previews: PreviewProvider {
     }
 }
 
-
-struct SmallSquare: View {
-    
-    var body: some View {
-        Rectangle()
-            .frame(width: 20, height: 20)
-            .foregroundColor(.gray)
-            .border(.black, width: 1)
-            .cornerRadius(3)
-    }
-}

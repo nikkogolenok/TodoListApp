@@ -25,12 +25,6 @@ struct SignInView: View {
                 WelcomLabels(title: "Welcome back", subTitle: "Sign up to continue",
                              top: 60, leading: 24, bottom: 0, trailing: 141)
                 
-//                RegistrationTextFields(titleUser: "Username",
-//                                       textFieldUser: "Enter your email",
-//                                       titlePassword: "Password",
-//                                       textFieldPassword: "Enter your password",
-//                                       top: 26, leading: 24, bottom: 17, trailing: 0)
-                
                 VStack(alignment: .leading, spacing: 15) {
                     Text("Username")
                         .font(.custom(FontsStyleManager.Roboto.medium, size: 20))
@@ -92,11 +86,6 @@ struct SignInView: View {
                     .foregroundColor(FontStyleColors.colorThin)
                 }
                 .padding(.top, 72)
-                
-//                TwoNavigationLink(titleLinkOne: "Sign Up",
-//                                  titleLinkTwo: "Sign In",
-//                                  spacing: 118,
-//                                  top: 72, leading: 0, bottom: 0, trailing: 0)
             }
             .offset(y: -50)
             .navigationBarBackButtonHidden(true)

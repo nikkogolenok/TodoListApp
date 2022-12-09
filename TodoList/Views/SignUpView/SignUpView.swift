@@ -56,14 +56,6 @@ struct SignUpView: View {
             .sheet(isPresented: $showSheet) {
                 ImagePicker(sourseType: .photoLibrary, selectedImage: self.$image)
             }
-        
-//            RegistrationTextFields(emailTextField: username,
-//                                   passwordTextField: password,
-//                                   titleUser: "Username",
-//                                   textFieldUser: "Enter your email",
-//                                   titlePassword: "Password",
-//                                   textFieldPassword: "Enter your password",
-//                                   top: 26, leading: 24, bottom: 17, trailing: 0)
             
             VStack(alignment: .leading, spacing: 15) {
                 Text("Username")
@@ -78,6 +70,18 @@ struct SignUpView: View {
             }
             .padding(.init(top: 26, leading: 24, bottom: 17, trailing: 0))
             
+            VStack(alignment: .leading, spacing: 15) {
+                Text("Email")
+                    .font(.custom(FontsStyleManager.Roboto.medium, size: 20))
+                
+                TextField("Enter your email", text: $useremail)
+                    .textContentType(.username)
+                
+                Rectangle()
+                    .frame(width: 326, height: 1)
+                    .foregroundColor(.gray)
+            }
+            .padding(.init(top: 10, leading: 24, bottom: 17, trailing: 0))
             
             VStack(alignment: .leading) {
                 Text("Password")
@@ -105,20 +109,15 @@ struct SignUpView: View {
                 .cornerRadius(5)
                 
                 NavigationLink("Sign In") {
-                    WorkListView(viewRouter: viewRouter)
+                    SignInView()
+                    //WorkListView(viewRouter: viewRouter)
                 }
                 .frame(width: 60, height: 21)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                 .cornerRadius(5)
                 .foregroundColor(FontStyleColors.colorRed)
             }
-            .padding(.top, 72)
-            
-//            TwoNavigationLink(viewRouter: viewRouter,
-//                              titleLinkOne: "Sign Up",
-//                              titleLinkTwo: "Sign In",
-//                              spacing: 51,
-//                              top: 72, leading: 0, bottom: 0, trailing: 0)
+            .padding(.top, 52)
         }
         .offset(y: -40)
         .navigationBarBackButtonHidden(true)
@@ -131,10 +130,3 @@ struct SignUpView: View {
         }
     }
 }
-
-//@available(iOS 16.0, *)
-//struct SignUpView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SignUpView()
-//    }
-//}

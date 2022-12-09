@@ -55,7 +55,7 @@ struct MenuView: View {
                     .padding(.leading, 20)
                     Spacer()
                 }
-                .background(Color(red: 253/255, green: 253/255, blue: 253/255))
+                .background(Color(red: 0.992, green: 0.992, blue: 0.992))
                 .navigationBarHidden(true)
             }
             

@@ -18,7 +18,7 @@ struct QuicksView: View {
         ZStack {
             Rectangle()
                 .frame(width: 343, height: 94)
-                .foregroundColor(.yellow)
+                .foregroundColor(.white)
             
             Rectangle()
                 .frame(width: 121, height: 3)

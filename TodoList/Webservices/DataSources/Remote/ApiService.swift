@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 struct ApiService {
-    static let baseURL = URL(string: "https://todolist.dev2.cogniteq.com/api/vi")
+    static let baseURL = URL(string: "https://todolist.dev2.cogniteq.com/api/v1")
 }
 
 enum RequestMethod: String {

@@ -16,12 +16,12 @@ struct ProfileView: View {
         VStack(spacing: 24) {
             VStack {
                 
-                Image(systemName: "gearshape.fill")
-                    .padding(.leading, 310)
-                    .padding(.top, 10)
+//                Image(systemName: "gearshape.fill")
+//                    .padding(.leading, 310)
+//                    .padding(.top, 10)
                 
                 HStack(spacing: 10) {
-                    Image(uiImage: self.image)
+                    Image("1")
                         .resizable()
                         .frame(width: 64, height: 64)
                         .cornerRadius(32)
@@ -37,8 +37,12 @@ struct ProfileView: View {
                         }
                     
                     VStack(alignment: .leading) {
-                        Text("Stephen")
-                        Text("pangcheo1210@gmail.")
+                        Text("Stephen Chow")
+                            .font(.custom(FontsStyleManager.Roboto.medium, size: 18))
+                            .foregroundColor(.gray)
+                        Text("pangcheo1210@gmail")
+                            .font(.custom(FontsStyleManager.Roboto.medium, size: 18))
+                            .foregroundColor(.gray)
                     }
                 }
                 .padding(.bottom, 30)
@@ -55,7 +59,9 @@ struct ProfileView: View {
                         Text("Completed Tasks")
                     }
                 }
-                .padding(.bottom, 30)
+                .padding(.bottom, 40)
+                .font(.custom(FontsStyleManager.Roboto.medium, size: 18))
+                .foregroundColor(.gray)
             }
             .padding(.top, 24)
             .frame(width: 343, height: 190)
@@ -64,14 +70,47 @@ struct ProfileView: View {
             HStack {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        ForEach(1..<100) { i in
-                            VStack(spacing: 7) {
+                        VStack(alignment: .leading, spacing: 7) {
                                 Text("Events")
+                                .padding(.trailing, 85)
+                                .font(.custom(FontsStyleManager.Roboto.medium, size: 18))
+                                .foregroundColor(.white)
                                 Text("12 Tasks")
+                                .font(.custom(FontsStyleManager.Roboto.medium, size: 18))
+                                .foregroundColor(.white)
                             }
                             .frame(width: 160, height: 100)
-                            .background(.blue)
-                        }
+                            .padding(.trailing, 5)
+                            .background(FontStyleColors.colorRed)
+                            .cornerRadius(5)
+                        
+                        VStack(alignment: .leading, spacing: 7) {
+                                Text("To do Task")
+                                .padding(.trailing, 53)
+                                .font(.custom(FontsStyleManager.Roboto.medium, size: 18))
+                                .foregroundColor(.white)
+                                Text("12 Tasks")
+                                .font(.custom(FontsStyleManager.Roboto.medium, size: 18))
+                                .foregroundColor(.white)
+                            }
+                            .frame(width: 160, height: 100)
+                            .padding(.trailing, 5)
+                            .background(FontStyleColors.colorAddProject)
+                            .cornerRadius(5)
+                        
+                        VStack(alignment: .leading, spacing: 7) {
+                                Text("To do Task")
+                                .padding(.trailing, 53)
+                                .font(.custom(FontsStyleManager.Roboto.medium, size: 18))
+                                .foregroundColor(.white)
+                                Text("12 Tasks")
+                                .font(.custom(FontsStyleManager.Roboto.medium, size: 18))
+                                .foregroundColor(.white)
+                            }
+                            .frame(width: 160, height: 100)
+                            .padding(.trailing, 5)
+                            .background(.purple)
+                            .cornerRadius(5)
                     }
                 }
             }
@@ -87,8 +126,11 @@ struct ProfileView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 80, height: 80)
+                                .foregroundColor(.white)
+                                .border(.gray, width: 1)
+                                .cornerRadius(40)
                             Text("60%")
-                                .foregroundColor(.red)
+                                .foregroundColor(.gray)
                         }
                         
                         Text("Events")
@@ -98,8 +140,11 @@ struct ProfileView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 80, height: 80)
+                                .foregroundColor(.white)
+                                .border(.gray, width: 1)
+                                .cornerRadius(40)
                             Text("40%")
-                                .foregroundColor(.red)
+                                .foregroundColor(.gray)
                         }
                         
                         Text("To do")
@@ -109,8 +154,11 @@ struct ProfileView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 80, height: 80)
+                                .foregroundColor(.white)
+                                .border(.gray, width: 1)
+                                .cornerRadius(40)
                             Text("80%")
-                                .foregroundColor(.red)
+                                .foregroundColor(.gray)
                         }
                         
                         Text("Quick Notes")

@@ -10,6 +10,9 @@ import SwiftUI
 @available(iOS 16.0, *)
 struct OnboardingView: View {
     
+    let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        
+    
     //MARK: - Localized Property
     private let buttonText = NSLocalizedString("subtitleScreenOne", comment: "")
     private let titleScreenOne = NSLocalizedString("titleScreenOne", comment: "")

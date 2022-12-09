@@ -16,7 +16,7 @@ struct AlertPlusButton: View {
     var body: some View {
             VStack(spacing: 24) {
                 NavigationLink("Add Task") {
-                    CreateTaskView()
+                    CreateTaskView(viewRouter: ViewRouter())
                 }
                 .frame(width: 268)
                 .font(.custom(FontsStyleManager.Roboto.thin, size: 18))

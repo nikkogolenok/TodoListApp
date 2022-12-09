@@ -21,7 +21,7 @@ struct ProjectCell: View {
                     Circle()
                         .frame(width: 26, height: 26)
                         .foregroundColor(Color(project.color.rawValue).opacity(0.2))
-                    
+
                     Circle()
                         .frame(width: 14, height: 14)
                         .foregroundColor(Color(project.color.rawValue))
@@ -31,14 +31,14 @@ struct ProjectCell: View {
                 .padding(.bottom, 52)
                 Spacer()
             }
-            
+
             VStack(spacing: 17) {
                 HStack {
                     Text(project.nameProject)
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                     Spacer()
                 }
-                
+
                 HStack {
                     Text("\(project.tasks.count) Tasks")
                         .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
@@ -50,7 +50,6 @@ struct ProjectCell: View {
             .padding(.leading, 24)
         }
         .frame(width: 165, height: 180)
-        .border(.red, width: 2)
         .background(
             Rectangle()
                 .fill(Color.white)
@@ -58,7 +57,6 @@ struct ProjectCell: View {
                         radius: 9,
                         x: 0, y: 0)
         )
-        .cornerRadius(10)
     }
 }
 

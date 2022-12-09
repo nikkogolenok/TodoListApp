@@ -10,9 +10,9 @@ import CoreData
 
 struct Database {
     
-    func insertUser(context: NSManagedObjectContext, userModel: SignUpUserDataModel) {
+    func insertUser(context: NSManagedObjectContext, userModel: SignUpUserModel) {
         
-        let userData = userModel.data
+        let userData = userModel
         
         let newUser = User(context: context)
         newUser.id = userData.id

@@ -22,7 +22,7 @@ struct RectangularAndText: View {
                 Rectangle()
                     .frame(width: 90, height: 48)
                     .cornerRadius(50)
-                    .foregroundColor(FontStyleColors.colorGray)
+                    .foregroundColor(FontStyleColors.colorSilver)
                 Text(textInRectangular)
             }
         }
