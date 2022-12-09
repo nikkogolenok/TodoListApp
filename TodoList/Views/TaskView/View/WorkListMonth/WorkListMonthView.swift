@@ -29,9 +29,9 @@ struct WorkListMonthView: View {
                             Image(systemName: "chevron.down")
                         }
                         .onTapGesture {
-                            if !changeImage {
-                                self.changeImage.toggle()
-                            }
+//                            if !changeImage {
+//                                self.changeImage.toggle()
+//                            }
                         }
                         sectionView()
                         

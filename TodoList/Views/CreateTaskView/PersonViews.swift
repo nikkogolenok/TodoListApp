@@ -20,7 +20,7 @@ struct PersonViews: View {
                 
                 Image("\(person.imageName)")
                     .resizable()
-                    .frame(width: 44 ,height: 44)
+                    .frame(width: 44 ,height: 54)
                     .padding(.leading, 16)
                     .cornerRadius(15)
                     

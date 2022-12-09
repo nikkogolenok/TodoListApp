@@ -118,6 +118,7 @@ struct ProfileView: View {
             
             VStack {
                 Text("Statistic")
+                    .foregroundColor(Color(red: 0.192, green: 0.192, blue: 0.192))
                     .padding(.trailing, 250)
                     .padding(.bottom, 22)
                 

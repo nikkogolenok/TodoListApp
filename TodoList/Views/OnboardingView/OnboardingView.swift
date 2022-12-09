@@ -85,7 +85,7 @@ struct OnboardingView: View {
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
                     .frame(width: 293, height: 48)
                     .background(Color.white)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color(red: 0.192, green: 0.192, blue: 0.192))
                     .cornerRadius(5)
                     .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, x: 0, y: 4)
                     .padding(.init(top: 31, leading: 0, bottom: 0, trailing: 0))

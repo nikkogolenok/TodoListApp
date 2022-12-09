@@ -33,6 +33,7 @@ struct AddProjectAlert: View {
         VStack() {
             Text("Title")
                 .font(.custom(FontsStyleManager.Roboto.thin ,size: 18))
+                .foregroundColor(Color(red: 0.192, green: 0.192, blue: 0.192))
                 .padding(.leading, 20)
                 .padding(.trailing, 270)
                 .padding(.top, 24)
@@ -50,6 +51,7 @@ struct AddProjectAlert: View {
             }
             Text("Choose Color")
                 .font(.custom(FontsStyleManager.Roboto.thin ,size: 18))
+                .foregroundColor(Color(red: 0.192, green: 0.192, blue: 0.192))
                 .padding(.trailing, 175)
                 .padding(.top, 44)
             HStack(spacing: 12) {

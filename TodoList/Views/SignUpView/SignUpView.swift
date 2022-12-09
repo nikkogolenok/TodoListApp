@@ -117,7 +117,7 @@ struct SignUpView: View {
                 .cornerRadius(5)
                 .foregroundColor(FontStyleColors.colorRed)
             }
-            .padding(.top, 52)
+            .padding(.top, 32)
         }
         .offset(y: -40)
         .navigationBarBackButtonHidden(true)

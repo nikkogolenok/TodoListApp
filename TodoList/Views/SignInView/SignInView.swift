@@ -76,14 +76,15 @@ struct SignInView: View {
                     .background(FontStyleColors.colorRed)
                     .cornerRadius(5)
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                    .foregroundColor(FontStyleColors.colorThin)
+                    .foregroundColor(FontStyleColors.colorWhite)
 
                     NavigationLink("Sign In") {
                         WorkListView(viewRouter: viewRouter)
                     }
                     .frame(width: 60, height: 21)
                     .font(.custom(FontsStyleManager.Roboto.thin, size: 18))
-                    .foregroundColor(FontStyleColors.colorThin)
+
+                    .foregroundColor(FontStyleColors.colorRed)
                 }
                 .padding(.top, 72)
             }
