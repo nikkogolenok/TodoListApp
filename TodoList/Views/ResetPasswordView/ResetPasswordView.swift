@@ -10,7 +10,9 @@ import SwiftUI
 struct ResetPasswordView: View {
     
     @Environment (\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @State private var emailTextField = ""
+    @State private var resetCode = ""
+    @State private var newPassword = ""
+    @State private var confirmPassword = ""
     
     var body: some View {
         
@@ -29,7 +31,7 @@ struct ResetPasswordView: View {
             
             VStack(alignment: .leading, spacing: 17) {
                 Text("Reset code")
-                TextField("Enter your number", text: $emailTextField)
+                TextField("Enter your number", text: $resetCode)
                 Rectangle()
                     .frame(width: 326, height: 1)
                     .foregroundColor(.gray)
@@ -37,7 +39,7 @@ struct ResetPasswordView: View {
             
             VStack(alignment: .leading, spacing: 17) {
                 Text("New password")
-                TextField("Enter your password", text: $emailTextField)
+                TextField("Enter your password", text: $newPassword)
                 Rectangle()
                     .frame(width: 326, height: 1)
                     .foregroundColor(.gray)
@@ -45,7 +47,7 @@ struct ResetPasswordView: View {
             
             VStack(alignment: .leading, spacing: 17) {
                 Text("Confirm password")
-                TextField("Enter your confirm password", text: $emailTextField)
+                TextField("Enter your confirm password", text: $confirmPassword)
                 Rectangle()
                     .frame(width: 326, height: 1)
                     .foregroundColor(.gray)

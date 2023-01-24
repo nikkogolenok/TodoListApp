@@ -29,13 +29,6 @@
 		4428B62728D32CF4004EE93E /* TabBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428B62628D32CF4004EE93E /* TabBarIcon.swift */; };
 		442EB523291D23E100BA8076 /* Localizable.string.strings in Resources */ = {isa = PBXBuildFile; fileRef = 442EB520291D23E100BA8076 /* Localizable.string.strings */; };
 		442EB526291D2C1000BA8076 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EB525291D2C1000BA8076 /* MonthView.swift */; };
-		442EB52F291E3EF800BA8076 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EB528291E3EF100BA8076 /* TagView.swift */; };
-		442EB530291E3EF800BA8076 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EB529291E3EF200BA8076 /* DateView.swift */; };
-		442EB531291E3EF800BA8076 /* AssignedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EB52A291E3EF200BA8076 /* AssignedView.swift */; };
-		442EB532291E3EF800BA8076 /* MembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EB52B291E3EF300BA8076 /* MembersView.swift */; };
-		442EB533291E3EF800BA8076 /* CompleteTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EB52C291E3EF400BA8076 /* CompleteTask.swift */; };
-		442EB534291E3EF800BA8076 /* SettingAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EB52D291E3EF600BA8076 /* SettingAlert.swift */; };
-		442EB535291E3EF800BA8076 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442EB52E291E3EF800BA8076 /* DescriptionView.swift */; };
 		4442350928E47FCD00FAF292 /* Fancy3DotsIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350828E47FCD00FAF292 /* Fancy3DotsIndexView.swift */; };
 		4442350C28E48EC600FAF292 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350B28E48EC600FAF292 /* OnboardView.swift */; };
 		4442350F28E4A9CD00FAF292 /* WelcomLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4442350E28E4A9CD00FAF292 /* WelcomLabels.swift */; };
@@ -117,13 +110,6 @@
 		442EB521291D23E100BA8076 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.string.strings; sourceTree = "<group>"; };
 		442EB522291D23E100BA8076 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.string.strings; sourceTree = "<group>"; };
 		442EB525291D2C1000BA8076 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
-		442EB528291E3EF100BA8076 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
-		442EB529291E3EF200BA8076 /* DateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
-		442EB52A291E3EF200BA8076 /* AssignedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignedView.swift; sourceTree = "<group>"; };
-		442EB52B291E3EF300BA8076 /* MembersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersView.swift; sourceTree = "<group>"; };
-		442EB52C291E3EF400BA8076 /* CompleteTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTask.swift; sourceTree = "<group>"; };
-		442EB52D291E3EF600BA8076 /* SettingAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingAlert.swift; sourceTree = "<group>"; };
-		442EB52E291E3EF800BA8076 /* DescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		4442350828E47FCD00FAF292 /* Fancy3DotsIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fancy3DotsIndexView.swift; sourceTree = "<group>"; };
 		4442350B28E48EC600FAF292 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
 		4442350E28E4A9CD00FAF292 /* WelcomLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomLabels.swift; sourceTree = "<group>"; };
@@ -208,7 +194,6 @@
 		4408264A28AB7B4F0067BA33 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
-				442EB527291E3EDE00BA8076 /* New */,
 				442EB51F291D23E100BA8076 /* Localization */,
 				4485735E28F837E600BED641 /* TaskModel */,
 				441F6EF828E30B6500A85DBC /* Webservices */,
@@ -295,20 +280,6 @@
 				442EB525291D2C1000BA8076 /* MonthView.swift */,
 			);
 			path = MonthView;
-			sourceTree = "<group>";
-		};
-		442EB527291E3EDE00BA8076 /* New */ = {
-			isa = PBXGroup;
-			children = (
-				442EB52A291E3EF200BA8076 /* AssignedView.swift */,
-				442EB52C291E3EF400BA8076 /* CompleteTask.swift */,
-				442EB529291E3EF200BA8076 /* DateView.swift */,
-				442EB52E291E3EF800BA8076 /* DescriptionView.swift */,
-				442EB52B291E3EF300BA8076 /* MembersView.swift */,
-				442EB52D291E3EF600BA8076 /* SettingAlert.swift */,
-				442EB528291E3EF100BA8076 /* TagView.swift */,
-			);
-			path = New;
 			sourceTree = "<group>";
 		};
 		4442350A28E48EB000FAF292 /* Model */ = {
@@ -754,11 +725,9 @@
 				447F33AA28D9C344004D7517 /* MenuView.swift in Sources */,
 				44045BC5290287570097D767 /* QuickModel.swift in Sources */,
 				4408266528ABDB730067BA33 /* FontsStyleManager.swift in Sources */,
-				442EB534291E3EF800BA8076 /* SettingAlert.swift in Sources */,
 				44E0D74628F026E400F618A8 /* CalendarView.swift in Sources */,
 				44045BC12901AEF60097D767 /* RectangularAndText.swift in Sources */,
 				4485736D28F95E7F00BED641 /* CustomNavigationView.swift in Sources */,
-				442EB52F291E3EF800BA8076 /* TagView.swift in Sources */,
 				447B467728B0FC64005C7291 /* ForgotPasswordView.swift in Sources */,
 				448573772900A55600BED641 /* ProjectModel.swift in Sources */,
 				441F6EFB28E30C1200A85DBC /* SignUpUseCase.swift in Sources */,
@@ -780,23 +749,18 @@
 				449DA7DE28EC70B300736BDD /* TickImage.swift in Sources */,
 				4498DF5328E5CECD002F86F3 /* AlertPlusButton.swift in Sources */,
 				449DA7F228EEFE1600736BDD /* CreateTaskView.swift in Sources */,
-				442EB532291E3EF800BA8076 /* MembersView.swift in Sources */,
 				4498DF5728E5D931002F86F3 /* AlertFilterView.swift in Sources */,
 				44045BC7290288240097D767 /* QuickViewModel.swift in Sources */,
 				447A02CA29096C0500FEC469 /* Database.swift in Sources */,
 				4485736328F85DD800BED641 /* SignUpUserModel.swift in Sources */,
-				442EB535291E3EF800BA8076 /* DescriptionView.swift in Sources */,
 				449DA7E028EC71B400736BDD /* ChooseColorSquares.swift in Sources */,
 				44E0D74C28F037EE00F618A8 /* DateValue.swift in Sources */,
-				442EB533291E3EF800BA8076 /* CompleteTask.swift in Sources */,
 				4449A01828D0BE29001720DD /* UserViewModel.swift in Sources */,
 				4428B62228D32B6B004EE93E /* WorkListView.swift in Sources */,
 				447B467928B10635005C7291 /* SignUpView.swift in Sources */,
 				441F6EFD28E30C2E00A85DBC /* SignInUseCase.swift in Sources */,
-				442EB530291E3EF800BA8076 /* DateView.swift in Sources */,
 				449DA7EA28EE35B900736BDD /* CreateNoteView.swift in Sources */,
 				441F6F0828E3126400A85DBC /* RemoteService.swift in Sources */,
-				442EB531291E3EF800BA8076 /* AssignedView.swift in Sources */,
 				4485733D28F5CA0500BED641 /* TabBarView.swift in Sources */,
 				449DA7E228EC882900736BDD /* ProjectCell.swift in Sources */,
 				4442351128E4AC6400FAF292 /* RegistrationTextFields.swift in Sources */,
